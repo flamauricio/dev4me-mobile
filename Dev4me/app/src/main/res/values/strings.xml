@@ -1,0 +1,27 @@
+<resources>
+
+    Nome App
+    <string name="app_name">Dev4me</string>
+
+    Inputs
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="nome">Nome</string>
+
+    Botao
+    <string name="entrar">entrar</string>
+
+    Radio
+    <string name="contranate">Sou contratante.</string>
+    <string name="candidato">Sou candidato.</string>
+
+    Login
+    <string name="ola">Olá :)</string>
+    <string name="bem_vindo_de_volta">bem vindo de volta!</string>
+    <string name="digite_para_entrar">digite o seu email e a sua senha para entrar:</string>
+    <string name="criar_conta">Criar conta.</string>
+
+    Cadastro
+    <string name="bem_vindo">seja bem vindo!</string>
+    <string name="preencha_formulario_criar_conta">Preencha o formulário para criar a sua conta:</string>
+</resources>
