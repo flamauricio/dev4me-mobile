@@ -24,4 +24,10 @@
     Cadastro
     <string name="bem_vindo">seja bem vindo!</string>
     <string name="preencha_formulario_criar_conta">Preencha o formulário para criar a sua conta:</string>
+
+    Icons
+    <string name="homeIcon">feed</string>
+    <string name="jobIcon">vagas</string>
+    <string name="userIcon">perfil</string>
+
 </resources>
