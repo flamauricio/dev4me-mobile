@@ -7,15 +7,15 @@ This project is a mobile application that helps to solve two problems at the sam
 the right people, and helps people to find the perfect job opportunity.<br><br>
 This idea came after a lot of searching and real life cases, so we decided to plan, build and develop this software<br>
 
-# Faculdade :school:
-São Paulo Tech School - SPTECH
-
 # Linguaguens / Frameworks / Biblioteca 🚀
   <div align="left">
-  <img align="center" alt="Android" height="120" width="150" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg">
-  <img align="center" alt="Kotlin" height="120" width="150" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
-  <img align="center" alt="Java" height="120" width="150" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+  <img align="center" alt="Android" height="120" width="170" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg">
+  <img align="center" alt="Kotlin" height="120" width="170" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
+  <img align="center" alt="Java" height="120" width="170" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
   </div>
+  
+# Faculdade :school:
+São Paulo Tech School - SPTECH
 
 # Desenvolvedores :man_technologist:
 - Gabriel Vieira @gabevixs
