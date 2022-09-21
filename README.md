@@ -1,7 +1,11 @@
 ![Alt text](https://github.com/flamauricio/Dev4me/blob/main/Logo-Dev4Me/logo-dev4me.png "Logo")
 
 # Sobre 
-Projeto referente ao 4º semestre do curso de Analise e Desenvolvimento de Sistemas
+When IT professionals (Developers, Systems analysts, Database administrators and etc) are looking for a job <br>
+and Companies are looking for new IT professionals to hire, they can match on Dev4me.<br>
+This project is a mobile application that helps to solve two problems at the same time, it helps companies to find <br>
+the right people, and helps people to find the perfect job opportunity.<br><br>
+This idea came after a lot of searching and real life cases, so we decided to plan, build and develop this software<br>
 
 # Faculdade :school:
 SP Tech 
@@ -10,12 +14,15 @@ SP Tech
 Grupo 2 ADS B
 
 # Linguaguens / Frameworks / Biblioteca 🚀
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <div align="left">
+  <img align="center" alt="Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
+  <img align="center" alt="Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+  </div>
 
 # Desenvolvedores :man_technologist:
-- Gabriel Vieira 
-- Guilherme de Carvalho
-- Flavio Mauricio
-- Breno de Freitas
-- Pedro de Souza
-- Karoll Araujo
+- Gabriel Vieira @gabevixs
+- Guilherme de Carvalho @gui0103
+- Flavio Mauricio @flamauricio
+- Breno de Freitas @BdFreitas
+- Pedro dos Santos @pppedrosantos
+- Karoll Araujo @karollas8
