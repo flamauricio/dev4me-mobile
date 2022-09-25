@@ -195,7 +195,7 @@
                                     android:fontFamily="@font/poppins_bold"
                                     android:gravity="center_vertical"
                                     android:textAlignment="textStart"
-                                    android:text="Remoto"
+                                    android:text="Híbrido"
                                     android:textColor="@color/light_title_gray"
                                     android:textSize="12dp"
                                     tools:ignore="RtlCompat" />
@@ -256,7 +256,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/accenture_logo" />
+                            android:src="@drawable/google_logo" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -265,7 +265,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Accenture"
+                            android:text="Google"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
                             android:layout_marginLeft="10dp"
@@ -291,7 +291,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Desenvolvedor Mobile Junior"
+                            android:text="Engenheiro de Software Senior"
                             android:textColor="@color/background_gray"
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
@@ -374,7 +374,7 @@
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
                                 android:textAlignment="textStart"
-                                android:text="R$ 3500,00 até 4500,00"
+                                android:text="R$ 18500,00 até 20000,00"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -409,7 +409,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/accenture_logo" />
+                            android:src="@drawable/nubank_logo" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -418,7 +418,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Accenture"
+                            android:text="Nubank"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
                             android:layout_marginLeft="10dp"
@@ -443,8 +443,8 @@
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
+                            android:text="Desenvolvedor Back-end Junior"
                             android:textAlignment="textStart"
-                            android:text="Desenvolvedor Mobile Junior"
                             android:textColor="@color/background_gray"
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
@@ -475,7 +475,7 @@
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
                                 android:textAlignment="textStart"
-                                android:text="São Paulo, SP"
+                                android:text="Rio de Janeiro, RJ"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -501,7 +501,7 @@
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
                                 android:textAlignment="textStart"
-                                android:text="Remoto"
+                                android:text="Presencial"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -527,7 +527,7 @@
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
                                 android:textAlignment="textStart"
-                                android:text="R$ 3500,00 até 4500,00"
+                                android:text="Não informado"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -562,7 +562,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/accenture_logo" />
+                            android:src="@drawable/c6_bank_logo" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -571,7 +571,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Accenture"
+                            android:text="C6 Bank"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
                             android:layout_marginLeft="10dp"
@@ -597,7 +597,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Desenvolvedor Mobile Junior"
+                            android:text="Engenheiro de Dados"
                             android:textColor="@color/background_gray"
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
@@ -654,7 +654,7 @@
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
                                 android:textAlignment="textStart"
-                                android:text="Remoto"
+                                android:text="Híbrido"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -680,7 +680,7 @@
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
                                 android:textAlignment="textStart"
-                                android:text="R$ 3500,00 até 4500,00"
+                                android:text="Não informado"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -715,7 +715,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/accenture_logo" />
+                            android:src="@drawable/spotify_logo" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -724,7 +724,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Accenture"
+                            android:text="Spotify"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
                             android:layout_marginLeft="10dp"
@@ -750,7 +750,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Desenvolvedor Mobile Junior"
+                            android:text="Desenvolvedor IOS Junior"
                             android:textColor="@color/background_gray"
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
@@ -833,7 +833,7 @@
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
                                 android:textAlignment="textStart"
-                                android:text="R$ 3500,00 até 4500,00"
+                                android:text="R$ 5400,00 até 6200,00"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -868,7 +868,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/accenture_logo" />
+                            android:src="@drawable/next_bank_png" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -877,7 +877,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Accenture"
+                            android:text="Banco Next"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
                             android:layout_marginLeft="10dp"
@@ -903,7 +903,7 @@
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
                             android:textAlignment="textStart"
-                            android:text="Desenvolvedor Mobile Junior"
+                            android:text="Tech Lead"
                             android:textColor="@color/background_gray"
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
@@ -986,7 +986,7 @@
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
                                 android:textAlignment="textStart"
-                                android:text="R$ 3500,00 até 4500,00"
+                                android:text="Não informado"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
