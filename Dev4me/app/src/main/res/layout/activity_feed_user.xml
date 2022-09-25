@@ -85,18 +85,918 @@
                     android:checkable="true"
                     android:clickable="true"
                     android:focusable="true"
-                    android:layout_height="150dp"
+                    android:layout_height="160dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="5dp">
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/accenture_logo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="Accenture"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="15dp"
+                                android:layout_marginLeft="10dp"
+                                tools:ignore="RtlCompat" />
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/bookmark_svgrepo_com"
+                                app:tint="@color/light_blue" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="Desenvolvedor Mobile Junior"
+                                android:textColor="@color/background_gray"
+                                android:textSize="20dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
+                                    app:tint="@color/light_blue" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="textStart"
+                                    android:text="São Paulo, SP"
+                                    android:textColor="@color/light_title_gray"
+                                    android:textSize="12dp"
+                                    tools:ignore="RtlCompat" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/description_fill1_wght400_grad0_opsz48"
+                                    app:tint="@color/light_blue" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="textStart"
+                                    android:text="Remoto"
+                                    android:textColor="@color/light_title_gray"
+                                    android:textSize="12dp"
+                                    tools:ignore="RtlCompat" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="2dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
+                                    app:tint="@color/light_blue" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="center_vertical"
+                                    android:textAlignment="textStart"
+                                    android:text="R$ 3500,00 até 4500,00"
+                                    android:textColor="@color/light_title_gray"
+                                    android:textSize="12dp"
+                                    tools:ignore="RtlCompat" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="160dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/accenture_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Accenture"
+                            android:textColor="@color/light_title_gray"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            tools:ignore="RtlCompat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/bookmark_svgrepo_com"
+                            app:tint="@color/super_light_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Desenvolvedor Mobile Junior"
+                            android:textColor="@color/background_gray"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="São Paulo, SP"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/description_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="Remoto"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="R$ 3500,00 até 4500,00"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="160dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/accenture_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Accenture"
+                            android:textColor="@color/light_title_gray"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            tools:ignore="RtlCompat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/bookmark_svgrepo_com"
+                            app:tint="@color/super_light_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Desenvolvedor Mobile Junior"
+                            android:textColor="@color/background_gray"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="São Paulo, SP"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/description_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="Remoto"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="R$ 3500,00 até 4500,00"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="160dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/accenture_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Accenture"
+                            android:textColor="@color/light_title_gray"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            tools:ignore="RtlCompat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/bookmark_svgrepo_com"
+                            app:tint="@color/super_light_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Desenvolvedor Mobile Junior"
+                            android:textColor="@color/background_gray"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="São Paulo, SP"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/description_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="Remoto"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="R$ 3500,00 até 4500,00"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="160dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/accenture_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Accenture"
+                            android:textColor="@color/light_title_gray"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            tools:ignore="RtlCompat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/bookmark_svgrepo_com"
+                            app:tint="@color/super_light_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Desenvolvedor Mobile Junior"
+                            android:textColor="@color/background_gray"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="São Paulo, SP"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/description_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="Remoto"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="R$ 3500,00 até 4500,00"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="160dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/accenture_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Accenture"
+                            android:textColor="@color/light_title_gray"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            tools:ignore="RtlCompat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/bookmark_svgrepo_com"
+                            app:tint="@color/super_light_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:textAlignment="textStart"
+                            android:text="Desenvolvedor Mobile Junior"
+                            android:textColor="@color/background_gray"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="São Paulo, SP"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/description_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="Remoto"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:textAlignment="textStart"
+                                android:text="R$ 3500,00 até 4500,00"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
     </ScrollView>
 
