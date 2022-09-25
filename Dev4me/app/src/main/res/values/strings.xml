@@ -34,5 +34,8 @@
     <string name="dev4me">dev4me</string>
     <string name="Dev4me">Dev4me</string>
 
+    FeedUser
+    <string name="filtrar_vagas">filtrar vagas</string>
+
 
 </resources>

@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textAlignment="center">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -25,9 +26,8 @@
                 android:fontFamily="@font/poppins_bold"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textSize="30dp">
+                android:textSize="30dp" />
 
-            </TextView>
         </LinearLayout>
 
     </LinearLayout>
@@ -39,9 +39,33 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/expand_more_fill1_wght400_grad0_opsz48"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/filtrar_vagas"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_weight="6"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/tune_fill1_wght400_grad0_opsz48"
+                app:tint="@color/white" />
 
     </LinearLayout>
 
