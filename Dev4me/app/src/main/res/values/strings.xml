@@ -30,4 +30,12 @@
     <string name="jobIcon">vagas</string>
     <string name="userIcon">perfil</string>
 
+    Dev4me
+    <string name="dev4me">dev4me</string>
+    <string name="Dev4me">Dev4me</string>
+
+    FeedUser
+    <string name="filtrar_vagas">filtrar vagas</string>
+
+
 </resources>
