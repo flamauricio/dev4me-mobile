@@ -37,5 +37,29 @@
     FeedUser
     <string name="filtrar_vagas">filtrar vagas</string>
 
+    CadastroVaga
+    <string name="cadastrar_vaga">Cadastrar nova vaga</string>]
+    <string name="titulo_vaga">Título da vaga</string>
+    <string name="titulo_vaga_hint">Digite um título para a vaga</string>
+    <string name="remoto">Remoto</string>
+    <string name="presencial">Presencial</string>
+    <string name="hibrido">Híbrido</string>
+    <string name="tipo_contrato">Tipo de contrato</string>]
+    <string name="localizacao">Localização</string>
+    <string name="localizacao_hint">Digite a localização da vaga</string>
+    <string name="avancar">Avançar</string>
+    <string name="tags">Clique aqui para adicionar tags</string>
+    <string name="faixa_salarial">Faixa salarial</string>
+    <string name="salario_nao_obrigatorio">Não é obrigatório informar o salário, embora seja preferível</string>
+    <string name="valor_minimo">Valor mínimo</string>
+    <string name="valor_maximo">Valor máximo</string>
+    <string name="breve_descricao">Breve descrição</string>
+    <string name="breve_descricao_hint">Descreva a vaga de forma resumida</string>
+    <string name="atividades">Atividades</string>
+    <string name="atividades_hint">Descreva as principais atividades que serão exercídas na vaga, exemplo: “criar páginas web”</string>
+    <string name="requisitos">Requisitos</string>
+    <string name="requisitos_hint">Descreva os requisitos para a vaga</string>
+    <string name="publicar_vaga">Publicar vaga</string>
+
 
 </resources>
