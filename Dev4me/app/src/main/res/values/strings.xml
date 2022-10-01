@@ -86,5 +86,40 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="requisitos_hint">Descreva os requisitos para a vaga</string>
     <string name="publicar_vaga">Publicar vaga</string>
 
+    Menu Usuario / Menu Empresa
+    <string name="editar_dados">Editar dados cadastrais.</string>
+    <string name="mudar_senha">Mudar senha.</string>
+    <string name="minhas_candidaturas">Minhas candidaturas.</string>
+    <string name="desativar_conta">Desativar conta.</string>
+    <string name="sair">Sair.</string>
+    <string name="minhas_vagas">Minhas vagas.</string>
+    <string name="adicionar_nova_vaga">Adicionar nova vaga.</string>
+
+    Mudar senha
+    <string name="editar_senha">Editar senha</string>
+    <string name="digite_senha_atual">Digite a sua senha atual</string>
+    <string name="digite_senha_nova">Digite a sua nova senha</string>
+    <string name="confirme_senha_nova">Confirme a sua nova senha</string>
+    <string name="salvar">salvar</string>
+
+    Perfil Usuario
+    <string name="mudar_foto">mudar foto</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="nome_hint">Digite aqui o seu nome e sobrenome</string>
+    <string name="idade">Idade</string>
+    <string name="idade_hint">Digite aqui a sua idade</string>
+    <string name="localizacao_perfil_usuario_hint">Digite aqui a sua localidade</string>
+    <string name="breve_descricao_perfil_hint">Isso aparecerá no feed de contratação</string>
+    <string name="carreira_experiencias">Carreiras / Experiências</string>
+    <string name="carreira_experiencias_hint">Ex: Onde estudou? Onde trabalhou?</string>
+
+    Perfil Empresa
+    <string name="nome_empresa">Nome da empresa</string>
+    <string name="nome_empresa_hint">Digite aqui o nome da empresa</string>
+    <string name="localizacao_perfil_empresa_hint">Digite aqui a localização da empresa</string>
+    <string name="descricao_empresa">Descrição da empresa</string>
+    <string name="descricao_empresa_hint">Digite uma breve descrição da empresa</string>
+    <string name="visao_valores_missao_empresa">Visão, valores e a missão da empresa</string>
+    <string name="visao_valores_missao_empresa_hint">Digite a visão, valores e a missão da empresa</string>
 
 </resources>
