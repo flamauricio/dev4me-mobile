@@ -38,13 +38,22 @@
     <string name="filtrar_vagas">filtrar vagas</string>
 
     OpenedCardJob
-    <string name="description_mock">-Desenvolvimento de aplicações front-end com React;
--Participar ativamente em soluções para os aplicativos desenvolvidos;
--Utilizará boas práticas e código limpo;
--Conhecimento em Design Patterns.
--Participar ativamente em soluções para os aplicativos desenvolvidos;
--Utilizará boas práticas e código limpo;
+    <string name="description_mock">Desenvolvimento de aplicações front-end com React;
+Participar ativamente em soluções para os aplicativos desenvolvidos;
+Utilizará boas práticas e código limpo;
+Conhecimento em Design Patterns.
+Participar ativamente em soluções para os aplicativos desenvolvidos;
+Utilizará boas práticas e código limpo.
 </string>
+    <string name="activities_mock">Criar telas e ajudar em sua ideação;
+Fazer diagramas para documentar códigos;
+Utilizar ferramentas no Azure na AWS.
+    </string>
+    <string name="requirements_mock">Participar ativamente em soluções para os aplicativos desenvolvidos;
+Utilizará boas práticas e código limpo;
+Conhecimento em Design Patterns;
+Conhecimento básico de JavaScript e Cloud.
+    </string>
     <string name="description">Descrição</string>
     <string name="requirements">Requisitos</string>
     <string name="activities">Atividades</string>

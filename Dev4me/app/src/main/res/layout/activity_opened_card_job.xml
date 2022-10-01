@@ -323,7 +323,7 @@
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
                     android:textAlignment="textStart"
-                    android:text="@string/description_mock"
+                    android:text="@string/activities_mock"
                     android:textColor="@color/light_title_gray"
                     android:textSize="12dp"
                     tools:ignore="RtlCompat"/>
@@ -361,7 +361,7 @@
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
                     android:textAlignment="textStart"
-                    android:text="@string/description_mock"
+                    android:text="@string/requirements_mock"
                     android:textColor="@color/light_title_gray"
                     android:textSize="12dp"
                     tools:ignore="RtlCompat"/>
