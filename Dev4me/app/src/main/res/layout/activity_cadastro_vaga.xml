@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text="@string/cadastrar_vaga"
-            android:textColor="@color/secondary_dev4me"
+            android:textColor="@color/ligheter_blue"
             android:fontFamily="@font/poppins_bold"
             android:textSize="30dp"
             />
@@ -361,7 +361,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="@string/publicar_vaga"
-            android:backgroundTint="@color/secondary_dev4me"
+            android:backgroundTint="@color/ligheter_blue"
             />
         <TextView
             android:layout_width="match_parent"
