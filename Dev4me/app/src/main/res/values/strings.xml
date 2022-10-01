@@ -37,6 +37,9 @@
     FeedUser
     <string name="filtrar_vagas">filtrar vagas</string>
 
+    FeedCompany
+    <string name="filtrar_busca">filtrar busca</string>
+
     OpenedCardJob
     <string name="description_mock">Desenvolvimento de aplicações front-end com React;
 Participar ativamente em soluções para os aplicativos desenvolvidos;

@@ -13,13 +13,25 @@
         android:theme="@style/Theme.Dev4me"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".CompanyProfile"
+=======
+            android:name=".FeedCompany"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+            android:name=".cadastro_vaga"
+>>>>>>> 3f4c4f8a28403d0599560dcec95a029ae3d7018a
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+<<<<<<< HEAD
             android:name=".UserProfile"
             android:exported="false">
             <meta-data
@@ -62,6 +74,8 @@
                 android:value="" />
         </activity>
         <activity
+=======
+>>>>>>> 3f4c4f8a28403d0599560dcec95a029ae3d7018a
             android:name=".openedCardJob"
             android:exported="false">
             <meta-data
