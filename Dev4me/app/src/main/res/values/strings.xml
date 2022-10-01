@@ -57,5 +57,6 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="description">Descrição</string>
     <string name="requirements">Requisitos</string>
     <string name="activities">Atividades</string>
+    <string name="button_apply_now">Candidatar-se</string>
 
 </resources>

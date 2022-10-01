@@ -384,7 +384,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:layout_gravity="center"
-                    android:text="Candidatar-se"
+                    android:text="@string/button_apply_now"
                     android:backgroundTint="@color/light_blue"
                     />
             </LinearLayout>
