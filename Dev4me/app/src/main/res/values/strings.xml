@@ -37,6 +37,9 @@
     FeedUser
     <string name="filtrar_vagas">filtrar vagas</string>
 
+    FeedCompany
+    <string name="filtrar_busca">filtrar busca</string>
+
     OpenedCardJob
     <string name="description_mock">Desenvolvimento de aplicações front-end com React;
 Participar ativamente em soluções para os aplicativos desenvolvidos;
@@ -58,7 +61,7 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="requirements">Requisitos</string>
     <string name="activities">Atividades</string>
     <string name="button_apply_now">Candidatar-se</string>
-    
+
     CadastroVaga
     <string name="cadastrar_vaga">Cadastrar nova vaga</string>]
     <string name="titulo_vaga">Título da vaga</string>

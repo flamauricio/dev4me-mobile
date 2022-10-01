@@ -13,13 +13,20 @@
         android:theme="@style/Theme.Dev4me"
         tools:targetApi="31">
         <activity
+            android:name=".FeedCompany"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".cadastro_vaga"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-                <activity
+        <activity
             android:name=".openedCardJob"
             android:exported="false">
             <meta-data
