@@ -13,6 +13,5 @@
     <color name="light_title_gray">#737373</color>
     <color name="super_light_gray">#D4D4D4</color>
     <color name="light_blue">#1E9CD7</color>
-
-    <color name="secondary_dev4me">#00D1FF</color>
+    <color name="ligheter_blue">#00D1FF</color>
 </resources>
