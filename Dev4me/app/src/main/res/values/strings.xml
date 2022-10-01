@@ -37,5 +37,16 @@
     FeedUser
     <string name="filtrar_vagas">filtrar vagas</string>
 
+    OpenedCardJob
+    <string name="description_mock">-Desenvolvimento de aplicações front-end com React;
+-Participar ativamente em soluções para os aplicativos desenvolvidos;
+-Utilizará boas práticas e código limpo;
+-Conhecimento em Design Patterns.
+-Participar ativamente em soluções para os aplicativos desenvolvidos;
+-Utilizará boas práticas e código limpo;
+</string>
+    <string name="description">Descrição</string>
+    <string name="requirements">Requisitos</string>
+    <string name="activities">Atividades</string>
 
 </resources>
