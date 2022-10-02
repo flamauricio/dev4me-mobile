@@ -380,7 +380,7 @@
                 android:layout_marginVertical="20dp"
                 android:orientation="vertical">
                 <Button
-                    android:id="@+id/containedButton"
+                    android:id="@+id/applyButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"

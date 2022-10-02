@@ -3,6 +3,12 @@
     Nome App
     <string name="app_name">Dev4me</string>
 
+    Alert Dialog
+    <string name="alert_title">Confirmar candidatura</string>
+    <string name="alert_message">Você deseja candidatar-se para essa vaga?</string>
+    <string name="alert_yes">Sim</string>
+    <string name="alert_no">Não</string>
+
     Inputs
     <string name="email">Email</string>
     <string name="senha">Senha</string>
