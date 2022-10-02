@@ -55,7 +55,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".openedCardJob"
+            android:name=".OpenedCardJob"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

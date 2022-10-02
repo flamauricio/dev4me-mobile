@@ -81,6 +81,7 @@
             android:orientation="vertical">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/feedUserCard1"
                     android:layout_width="match_parent"
                     android:checkable="true"
                     android:clickable="true"
