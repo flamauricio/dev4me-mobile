@@ -1,4 +1,6 @@
-![Alt text](https://github.com/flamauricio/Dev4me/blob/main/Logo-Dev4Me/logo-dev4me.png "Logo")
+<div align="center">
+  <img align="center" alt="DEV4ME" src="https://github.com/flamauricio/Dev4me/blob/main/Logo-Dev4Me/logo-dev4me.png">
+</div>
 
 # About
 When IT professionals (Developers, Systems analysts, Database administrators and etc) are looking for a job <br>
