@@ -128,6 +128,7 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="breve_descricao_perfil_hint">Isso aparecerá no feed de contratação</string>
     <string name="carreira_experiencias">Carreiras / Experiências</string>
     <string name="carreira_experiencias_hint">Ex: Onde estudou? Onde trabalhou?</string>
+    <string name="my_candidacies">Minhas Candidaturas</string>
 
     Perfil Empresa
     <string name="nome_empresa">Nome da empresa</string>
