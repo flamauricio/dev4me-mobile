@@ -68,6 +68,16 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="activities">Atividades</string>
     <string name="button_apply_now">Candidatar-se</string>
 
+    PersonProfileView
+    <string name="person_description">-Desenvolvimento de aplicações front-end com React;
+-Participar ativamente em soluções para os aplicativos desenvolvidos;
+-Utilizará boas práticas e código limpo;
+-Conhecimento em Design Patterns.
+-Participar ativamente em soluções para os aplicativos desenvolvidos;
+-Utilizará boas práticas e código limpo;
+</string>
+    <string name="contact">Contatar</string>
+
     CadastroVaga
     <string name="cadastrar_vaga">Cadastrar nova vaga</string>]
     <string name="titulo_vaga">Título da vaga</string>
