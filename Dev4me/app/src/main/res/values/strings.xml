@@ -41,10 +41,13 @@
     <string name="Dev4me">Dev4me</string>
 
     FeedUser
-    <string name="filtrar_vagas">filtrar vagas</string>
+    <string name="filtrar_vagas">Filtrar vagas</string>
 
     FeedCompany
-    <string name="filtrar_busca">filtrar busca</string>
+    <string name="filtrar_busca">Filtrar busca</string>
+
+    Filters
+    <string name="search_by_tag">Buscar por Tags</string>
 
     OpenedCardJob
     <string name="description_mock">Desenvolvimento de aplicações front-end com React;
