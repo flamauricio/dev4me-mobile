@@ -48,6 +48,13 @@
 
     Filters
     <string name="search_by_tag">Buscar por Tags</string>
+    <string name="tag_search_label">Digite uma Tag</string>
+    <string name="search_by_local">Buscar por Localização</string>
+    <string name="local_search_label">Digite uma Localização</string>
+    <string name="checkbox_remote">Remoto</string>
+    <string name="checkbox_hybrid">Híbrido</string>
+    <string name="checkbox_presential">Presencial</string>
+    <string name="button_search">Buscar</string>
 
     OpenedCardJob
     <string name="description_mock">Desenvolvimento de aplicações front-end com React;
