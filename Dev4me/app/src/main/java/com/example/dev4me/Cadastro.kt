@@ -80,11 +80,9 @@ class Cadastro : AppCompatActivity() {
             )
         } else {
             val body: EmpresaRequest = EmpresaRequest(
-                null,
                 nome,
                 email,
-                senha,
-                null
+                senha
             )
             cadastroRequest.postEmpresa(body).enqueue(
                 object : Callback<Unit> {
