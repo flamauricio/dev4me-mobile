@@ -30,6 +30,8 @@
     Cadastro
     <string name="bem_vindo">seja bem vindo!</string>
     <string name="preencha_formulario_criar_conta">Preencha o formulário para criar a sua conta:</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="ja_possuo_conta">já possuo uma conta.</string>
 
     Icons
     <string name="homeIcon">feed</string>
