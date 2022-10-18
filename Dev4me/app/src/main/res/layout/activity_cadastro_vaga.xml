@@ -138,6 +138,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
+            android:text="@string/job_level"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupLevel"
+            android:checkedButton="@+id/radio_button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radio_button_level_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/level_junior"
+                android:layout_weight="1"
+                />
+            <RadioButton
+                android:id="@+id/radio_button_level_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/level_pleno"
+                android:layout_weight="1"
+                />
+            <RadioButton
+                android:id="@+id/radio_button_level_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/level_Senior"
+                android:layout_weight="1"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
             android:text="@string/localizacao"
             android:fontFamily="@font/poppins_bold"
             android:textSize="20dp"

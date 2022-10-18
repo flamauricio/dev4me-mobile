@@ -97,7 +97,8 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="remoto">Remoto</string>
     <string name="presencial">Presencial</string>
     <string name="hibrido">Híbrido</string>
-    <string name="tipo_contrato">Tipo de contrato</string>]
+    <string name="tipo_contrato">Tipo de contrato</string>
+    <string name="job_level">Level da vaga</string>
     <string name="localizacao">Localização</string>
     <string name="localizacao_hint">Digite a localização da vaga</string>
     <string name="avancar">Avançar</string>
@@ -113,6 +114,9 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="requisitos">Requisitos</string>
     <string name="requisitos_hint">Descreva os requisitos para a vaga</string>
     <string name="publicar_vaga">Publicar vaga</string>
+    <string name="level_junior">Junior</string>
+    <string name="level_pleno">Pleno</string>
+    <string name="level_Senior">Senior</string>
 
     Menu Usuario / Menu Empresa
     <string name="editar_dados">Editar dados cadastrais.</string>
