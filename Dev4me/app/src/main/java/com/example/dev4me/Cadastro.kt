@@ -24,12 +24,25 @@ class Cadastro : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.cadastrarBtn.setOnClickListener {
-            cadastrar()
+            showTerms()
         }
 
         binding.jaPossuoConta.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
+    }
+
+    private fun showTerms() {
+        MaterialAlertDialogBuilder(this)
+            .setTitle(resources.getString(R.string.usage_terms))
+            .setMessage(resources.getString(R.string.usage_terms_lgpd_text))
+            .setNegativeButton(resources.getString(R.string.alert_disagree)) { dialog, which ->
+                // Do nothing
+            }
+            .setPositiveButton(resources.getString(R.string.alert_agree)) { dialog, which ->
+                cadastrar()
+            }
+            .show()
     }
 
     private fun cadastrar() {

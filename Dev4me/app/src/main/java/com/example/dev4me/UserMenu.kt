@@ -40,11 +40,5 @@ class UserMenu : AppCompatActivity() {
             // startActivity(navigate)
         }
 
-        binding.logOff.setOnClickListener {
-            // Page not done yet
-            // val navigate = Intent(this, UserCandidacies::class.java)
-            // startActivity(navigate)
-        }
-
     }
 }

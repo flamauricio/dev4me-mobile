@@ -8,6 +8,12 @@
     <string name="alert_message">Você deseja candidatar-se para essa vaga?</string>
     <string name="alert_yes">Sim</string>
     <string name="alert_no">Não</string>
+    <string name="usage_terms">Termo de consentimento LGPD</string>
+    <string name="usage_terms_lgpd_text">Este documento visa registrar a manifestação livre, informada e inequívoca pela qual o titular concorda com o tratamento de seus dados pessoais para finalidade específica, em conformidade com a Lei nº 13.709 – Lei Geral de Proteção de Dados Pessoais (LGPD).
+Informamos que coletamos seus dados pessoais (CPF, Nome, Telefone, E-mail, Endereço) para Cupom Fiscal, Controle de vendas por clientes dentro da ferramenta, Pedidos feitos pelo Delivery, Controle de confissão de dívidas (Fiado). Os seus dados pessoais serão armazenados e preservados por um período indeterminado; os dados dos clientes são registrados no sistema e podem ser anonimizados a qualquer momento, desde que o cliente solicite.
+</string>
+    <string name="alert_agree">Concordo</string>
+    <string name="alert_disagree">Discordo</string>
 
     Inputs
     <string name="email">Email</string>
