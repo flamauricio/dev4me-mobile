@@ -18,5 +18,11 @@ class FeedUser : AppCompatActivity() {
             val navigateToOpenedCard = Intent(this, OpenedCardJob::class.java)
             startActivity(navigateToOpenedCard)
         }
+
+        binding.profileIcon.setOnClickListener {
+            val navigateToProfile = Intent(this, UserMenu::class.java)
+            startActivity(navigateToProfile)
+        }
+
     }
 }

@@ -1,5 +1,6 @@
 package com.example.dev4me
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.dev4me.databinding.ActivityOpenedCardJobBinding
@@ -13,6 +14,11 @@ class OpenedCardJob : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityOpenedCardJobBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.profileIcon.setOnClickListener {
+            val navigateToProfile = Intent(this, UserProfile::class.java)
+            startActivity(navigateToProfile)
+        }
 
         binding.applyButton.setOnClickListener {
             MaterialAlertDialogBuilder(this)

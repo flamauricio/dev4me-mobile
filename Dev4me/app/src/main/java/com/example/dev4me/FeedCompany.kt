@@ -18,5 +18,10 @@ class FeedCompany : AppCompatActivity() {
             val navigatePersonProfile = Intent(this, PersonProfileView::class.java)
             startActivity(navigatePersonProfile)
         }
+
+        binding.profileIcon.setOnClickListener {
+            val navigateToProfile = Intent(this, CompanyMenu::class.java)
+            startActivity(navigateToProfile)
+        }
     }
 }
