@@ -37,7 +37,7 @@ class Cadastro : AppCompatActivity() {
             .setTitle(resources.getString(R.string.usage_terms))
             .setMessage(resources.getString(R.string.usage_terms_lgpd_text))
             .setNegativeButton(resources.getString(R.string.alert_disagree)) { dialog, which ->
-                // Do nothing
+
             }
             .setPositiveButton(resources.getString(R.string.alert_agree)) { dialog, which ->
                 cadastrar()
@@ -75,7 +75,7 @@ class Cadastro : AppCompatActivity() {
                         }
 
                         if (response.code() == 201) {
-                            startActivity(Intent(this@Cadastro, FeedUser::class.java))
+                            startActivity(Intent(this@Cadastro, MainActivity::class.java))
                             return
                         }
 
@@ -108,7 +108,7 @@ class Cadastro : AppCompatActivity() {
                         }
 
                         if (response.code() == 201) {
-                            startActivity(Intent(this@Cadastro, FeedCompany::class.java))
+                            startActivity(Intent(this@Cadastro, MainActivity::class.java))
                             return
                         }
 
