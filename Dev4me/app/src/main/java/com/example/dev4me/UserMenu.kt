@@ -19,5 +19,32 @@ class UserMenu : AppCompatActivity() {
             startActivity(navigateToProfile)
         }
 
+        binding.editPersonalData.setOnClickListener {
+            val navigate = Intent(this, UserProfile::class.java)
+            startActivity(navigate)
+        }
+
+        binding.changePassword.setOnClickListener {
+            val navigate = Intent(this, MudarSenha::class.java)
+            startActivity(navigate)
+        }
+
+        binding.myApplyedJobs.setOnClickListener {
+            val navigate = Intent(this, UserCandidacies::class.java)
+            startActivity(navigate)
+        }
+
+        binding.unableAccount.setOnClickListener {
+            // Page not done yet
+            // val navigate = Intent(this, UserCandidacies::class.java)
+            // startActivity(navigate)
+        }
+
+        binding.logOff.setOnClickListener {
+            // Page not done yet
+            // val navigate = Intent(this, UserCandidacies::class.java)
+            // startActivity(navigate)
+        }
+
     }
 }

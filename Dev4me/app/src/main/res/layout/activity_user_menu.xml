@@ -105,6 +105,7 @@
             android:layout_marginTop="20dp"
             >
             <LinearLayout
+                android:id="@+id/editPersonalData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -131,6 +132,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/changePassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -157,6 +159,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/myApplyedJobs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -183,6 +186,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/unableAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -209,6 +213,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/logOff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
