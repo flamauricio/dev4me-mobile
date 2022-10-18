@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding.criarConta.setOnClickListener {
             startActivity(Intent(this, Cadastro::class.java))
         }
+
     }
 
     private fun login() {

@@ -4,89 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-    >
+        android:layout_height="wrap_content">
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp"
         android:layout_marginTop="40dp"
-    >
+        android:orientation="vertical"
+        android:padding="20dp">
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-        >
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/ola"
                 android:textAlignment="center"
-                android:textSize="30dp"
-                android:fontFamily="@font/poppins_bold"
-            />
+                android:textSize="30dp" />
+
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/bem_vindo_de_volta"
                 android:textAlignment="center"
-                android:textSize="30dp"
-                android:fontFamily="@font/poppins_bold"
-            />
+                android:textSize="30dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-        >
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/digite_para_entrar"
                 android:textAlignment="textStart"
-                android:layout_marginTop="40dp"
-                android:textSize="15dp"
-                android:fontFamily="@font/poppins_bold"
-            />
+                android:textSize="15dp" />
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            >
+                android:hint="@string/email">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                />
+                    android:layout_marginBottom="10dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/senha"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            >
+                android:hint="@string/senha">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwordEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                />
+                    android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,40 +88,38 @@
                 android:id="@+id/criarConta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAlignment="textStart"
-                android:text="@string/criar_conta"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/poppins_bold"
-            />
+                android:text="@string/criar_conta"
+                android:textAlignment="textStart" />
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:textAlignment="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-        >
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
             <RadioGroup
                 android:id="@+id/radioGroup"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:checkedButton="@+id/contratanteRb"
-            >
+                android:checkedButton="@+id/contratanteRb">
+
                 <RadioButton
                     android:id="@+id/contratanteRb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/contranate"
-                />
+                    android:text="@string/contranate" />
+
                 <RadioButton
                     android:id="@+id/candidatoRb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/candidato"
-                />
+                    android:text="@string/candidato" />
             </RadioGroup>
         </LinearLayout>
 
@@ -135,8 +127,7 @@
             android:id="@+id/entrarBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/entrar"
-        />
+            android:text="@string/entrar" />
     </LinearLayout>
 
 </LinearLayout>

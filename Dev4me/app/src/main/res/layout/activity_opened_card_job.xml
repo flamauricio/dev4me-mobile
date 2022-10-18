@@ -4,31 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OpenedCardJob"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".OpenedCardJob">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/background_gray"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        android:background="@color/background_gray">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAlignment="center">
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/white" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_weight="3"
                 android:fontFamily="@font/poppins_bold"
-                android:gravity="center"
                 android:text="@string/dev4me"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="30dp"
+
                 />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_person_24"
+                app:tint="@color/white" />
 
         </LinearLayout>
 
@@ -57,21 +73,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
                     android:layout_weight="4"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:textAlignment="textStart"
                     android:text="Accenture"
+                    android:textAlignment="textStart"
                     android:textColor="@color/light_title_gray"
                     android:textSize="20dp"
-                    android:layout_marginLeft="20dp"
                     tools:ignore="RtlCompat" />
             </LinearLayout>
 
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"/>
+                android:layout_marginHorizontal="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -85,8 +101,8 @@
                     android:layout_weight="4"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:textAlignment="textStart"
                     android:text="Desenvolvedor Mobile Junior"
+                    android:textAlignment="textStart"
                     android:textColor="@color/light_title_gray"
                     android:textSize="20dp"
                     tools:ignore="RtlCompat" />
@@ -95,7 +111,7 @@
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"/>
+                android:layout_marginHorizontal="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -107,8 +123,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="20dp"
@@ -122,18 +138,19 @@
                         android:layout_weight="4"
                         android:fontFamily="@font/poppins_bold"
                         android:gravity="center_vertical"
-                        android:textAlignment="textStart"
                         android:text="Júnior"
+                        android:textAlignment="textStart"
                         android:textColor="@color/light_title_gray"
                         android:textSize="12dp"
                         tools:ignore="RtlCompat" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="20dp"
@@ -147,8 +164,8 @@
                         android:layout_weight="4"
                         android:fontFamily="@font/poppins_bold"
                         android:gravity="center_vertical"
-                        android:textAlignment="textStart"
                         android:text="São Paulo, SP"
+                        android:textAlignment="textStart"
                         android:textColor="@color/light_title_gray"
                         android:textSize="12dp"
                         tools:ignore="RtlCompat" />
@@ -158,8 +175,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="20dp"
@@ -173,8 +190,8 @@
                         android:layout_weight="4"
                         android:fontFamily="@font/poppins_bold"
                         android:gravity="center_vertical"
-                        android:textAlignment="textStart"
                         android:text="Híbrido"
+                        android:textAlignment="textStart"
                         android:textColor="@color/light_title_gray"
                         android:textSize="12dp"
                         tools:ignore="RtlCompat" />
@@ -184,8 +201,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="20dp"
@@ -199,8 +216,8 @@
                         android:layout_weight="4"
                         android:fontFamily="@font/poppins_bold"
                         android:gravity="center_vertical"
-                        android:textAlignment="textStart"
                         android:text="R$ 3500,00 até 4500,00"
+                        android:textAlignment="textStart"
                         android:textColor="@color/light_title_gray"
                         android:textSize="12dp"
                         tools:ignore="RtlCompat" />
@@ -210,79 +227,80 @@
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"/>
+                android:layout_marginHorizontal="20dp" />
 
             <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="20dp"
-                android:paddingRight="30dp">
 
-                <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:chipBackgroundColor="@color/ligheter_blue"
-                    android:text="java"
-                    app:textStartPadding="20dp"
-                    app:textEndPadding="20dp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:layout_marginHorizontal="5dp"/>
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="20dp"
+                    android:paddingRight="30dp">
 
-                <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:chipBackgroundColor="@color/ligheter_blue"
-                    android:text="javascript"
-                    app:textStartPadding="20dp"
-                    app:textEndPadding="20dp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:layout_marginHorizontal="5dp"/>
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="java"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ligheter_blue"
+                        app:textEndPadding="20dp"
+                        app:textStartPadding="20dp" />
 
-                <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:chipBackgroundColor="@color/ligheter_blue"
-                    android:text="kotlin"
-                    app:textStartPadding="20dp"
-                    app:textEndPadding="20dp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:layout_marginHorizontal="5dp"/>
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="javascript"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ligheter_blue"
+                        app:textEndPadding="20dp"
+                        app:textStartPadding="20dp" />
 
-                <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:chipBackgroundColor="@color/ligheter_blue"
-                    android:text="android"
-                    app:textStartPadding="20dp"
-                    app:textEndPadding="20dp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:layout_marginHorizontal="5dp"/>
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="kotlin"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ligheter_blue"
+                        app:textEndPadding="20dp"
+                        app:textStartPadding="20dp" />
 
-                <com.google.android.material.chip.Chip
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:chipBackgroundColor="@color/ligheter_blue"
-                    android:text="react-native"
-                    app:textStartPadding="20dp"
-                    app:textEndPadding="20dp"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:layout_marginHorizontal="5dp"/>
-            </LinearLayout>
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="android"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ligheter_blue"
+                        app:textEndPadding="20dp"
+                        app:textStartPadding="20dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="react-native"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ligheter_blue"
+                        app:textEndPadding="20dp"
+                        app:textStartPadding="20dp" />
+                </LinearLayout>
             </HorizontalScrollView>
 
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"/>
+                android:layout_marginHorizontal="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -294,15 +312,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="4"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:layout_gravity="center"
                     android:text="@string/description"
                     android:textColor="@color/light_title_gray"
                     android:textSize="20dp"
-                    android:layout_marginBottom="10dp"
-                    tools:ignore="RtlCompat"/>
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -310,17 +328,17 @@
                     android:layout_weight="4"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:textAlignment="textStart"
                     android:text="@string/description_mock"
+                    android:textAlignment="textStart"
                     android:textColor="@color/light_title_gray"
                     android:textSize="12dp"
-                    tools:ignore="RtlCompat"/>
+                    tools:ignore="RtlCompat" />
             </LinearLayout>
 
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"/>
+                android:layout_marginHorizontal="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -332,15 +350,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="4"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:layout_gravity="center"
                     android:text="@string/activities"
                     android:textColor="@color/light_title_gray"
                     android:textSize="20dp"
-                    android:layout_marginBottom="10dp"
-                    tools:ignore="RtlCompat"/>
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -348,17 +366,17 @@
                     android:layout_weight="4"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:textAlignment="textStart"
                     android:text="@string/activities_mock"
+                    android:textAlignment="textStart"
                     android:textColor="@color/light_title_gray"
                     android:textSize="12dp"
-                    tools:ignore="RtlCompat"/>
+                    tools:ignore="RtlCompat" />
             </LinearLayout>
 
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"/>
+                android:layout_marginHorizontal="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -370,15 +388,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="4"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:layout_gravity="center"
                     android:text="@string/requirements"
                     android:textColor="@color/light_title_gray"
                     android:textSize="20dp"
-                    android:layout_marginBottom="10dp"
-                    tools:ignore="RtlCompat"/>
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -386,17 +404,17 @@
                     android:layout_weight="4"
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
-                    android:textAlignment="textStart"
                     android:text="@string/requirements_mock"
+                    android:textAlignment="textStart"
                     android:textColor="@color/light_title_gray"
                     android:textSize="12dp"
-                    tools:ignore="RtlCompat"/>
+                    tools:ignore="RtlCompat" />
             </LinearLayout>
 
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"/>
+                android:layout_marginHorizontal="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -404,15 +422,15 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="20dp"
                 android:orientation="vertical">
+
                 <Button
                     android:id="@+id/applyButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
                     android:layout_gravity="center"
-                    android:text="@string/button_apply_now"
                     android:backgroundTint="@color/light_blue"
-                    />
+                    android:gravity="center_vertical"
+                    android:text="@string/button_apply_now" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

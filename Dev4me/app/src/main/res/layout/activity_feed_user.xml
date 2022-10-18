@@ -16,26 +16,46 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textAlignment="center">
+            >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/white"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/poppins_bold"
-                android:gravity="center"
                 android:text="@string/dev4me"
-                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:layout_weight="3"
+                android:textAlignment="center"
+
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_person_24"
+                app:tint="@color/white"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
 
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:background="@color/light_gray"
-        android:layout_marginBottom="5dp">
+        android:layout_marginBottom="5dp"
+        android:background="@color/light_gray">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,57 +99,115 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/feedUserCard1"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/feedUserCard1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:checkable="true"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="5dp">
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/accenture_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:text="Accenture"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/light_title_gray"
+                            android:textSize="15dp"
+                            tools:ignore="RtlCompat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/bookmark_svgrepo_com"
+                            app:tint="@color/light_blue" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center_vertical"
+                            android:text="Desenvolvedor Mobile Junior"
+                            android:textAlignment="textStart"
+                            android:textSize="20dp"
+                            tools:ignore="RtlCompat" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:gravity="center_vertical">
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
+
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/accenture_logo" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="4"
-                                android:fontFamily="@font/poppins_bold"
-                                android:gravity="center_vertical"
-                                android:textAlignment="textStart"
-                                android:text="Accenture"
-                                android:textColor="@color/light_title_gray"
-                                android:textSize="15dp"
-                                android:layout_marginLeft="10dp"
-                                tools:ignore="RtlCompat" />
-
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/bookmark_svgrepo_com"
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_round_stairs_24"
                                 app:tint="@color/light_blue" />
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:text="Júnior"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -137,137 +215,79 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
+                                android:text="São Paulo, SP"
                                 android:textAlignment="textStart"
-                                android:text="Desenvolvedor Mobile Junior"
-                                android:textColor="@color/background_gray"
-                                android:textSize="20dp"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
 
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
-                            <LinearLayout
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/description_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_marginBottom="2dp">
-
-
-                                <ImageView
-                                    android:layout_width="20dp"
-                                    android:layout_height="15dp"
-                                    android:src="@drawable/ic_round_stairs_24"
-                                    app:tint="@color/light_blue" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="4"
-                                    android:fontFamily="@font/poppins_bold"
-                                    android:gravity="center_vertical"
-                                    android:textAlignment="textStart"
-                                    android:text="Júnior"
-                                    android:textColor="@color/light_title_gray"
-                                    android:textSize="12dp"
-                                    tools:ignore="RtlCompat" />
-
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_marginBottom="2dp">
-
-
-                                <ImageView
-                                    android:layout_width="20dp"
-                                    android:layout_height="15dp"
-                                    android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
-                                    app:tint="@color/light_blue" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="4"
-                                    android:fontFamily="@font/poppins_bold"
-                                    android:gravity="center_vertical"
-                                    android:textAlignment="textStart"
-                                    android:text="São Paulo, SP"
-                                    android:textColor="@color/light_title_gray"
-                                    android:textSize="12dp"
-                                    tools:ignore="RtlCompat" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_marginBottom="2dp">
-
-                                <ImageView
-                                    android:layout_width="20dp"
-                                    android:layout_height="15dp"
-                                    android:src="@drawable/description_fill1_wght400_grad0_opsz48"
-                                    app:tint="@color/light_blue" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="4"
-                                    android:fontFamily="@font/poppins_bold"
-                                    android:gravity="center_vertical"
-                                    android:textAlignment="textStart"
-                                    android:text="Híbrido"
-                                    android:textColor="@color/light_title_gray"
-                                    android:textSize="12dp"
-                                    tools:ignore="RtlCompat" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_marginBottom="2dp">
-
-                                <ImageView
-                                    android:layout_width="20dp"
-                                    android:layout_height="15dp"
-                                    android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
-                                    app:tint="@color/light_blue" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="4"
-                                    android:fontFamily="@font/poppins_bold"
-                                    android:gravity="center_vertical"
-                                    android:textAlignment="textStart"
-                                    android:text="R$ 3500,00 até 4500,00"
-                                    android:textColor="@color/light_title_gray"
-                                    android:textSize="12dp"
-                                    tools:ignore="RtlCompat" />
-
-                            </LinearLayout>
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:text="Híbrido"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
 
                         </LinearLayout>
-                    </LinearLayout>
 
-                </com.google.android.material.card.MaterialCardView>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
+                                app:tint="@color/light_blue" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_vertical"
+                                android:text="R$ 3500,00 até 4500,00"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/light_title_gray"
+                                android:textSize="12dp"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:checkable="true"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_height="160dp"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="5dp">
+                android:layout_marginVertical="5dp"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -288,14 +308,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="Google"
+                            android:textAlignment="textStart"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
-                            android:layout_marginLeft="10dp"
                             tools:ignore="RtlCompat" />
 
                         <ImageView
@@ -317,9 +337,9 @@
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="Engenheiro de Software Senior"
-                            android:textColor="@color/background_gray"
+                            android:textAlignment="textStart"
+
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
 
@@ -333,8 +353,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -348,8 +368,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="São Paulo, SP"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -359,8 +379,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -374,8 +394,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Remoto"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -385,8 +405,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -400,8 +420,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="R$ 18500,00 até 20000,00"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -415,12 +435,12 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:checkable="true"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_height="160dp"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="5dp">
+                android:layout_marginVertical="5dp"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -441,14 +461,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="Nubank"
+                            android:textAlignment="textStart"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
-                            android:layout_marginLeft="10dp"
                             tools:ignore="RtlCompat" />
 
                         <ImageView
@@ -472,7 +492,7 @@
                             android:gravity="center_vertical"
                             android:text="Desenvolvedor Back-end Junior"
                             android:textAlignment="textStart"
-                            android:textColor="@color/background_gray"
+
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
 
@@ -486,8 +506,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -501,8 +521,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Rio de Janeiro, RJ"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -512,8 +532,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -527,8 +547,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Presencial"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -538,8 +558,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -553,8 +573,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Não informado"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -568,12 +588,12 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:checkable="true"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_height="160dp"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="5dp">
+                android:layout_marginVertical="5dp"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -594,14 +614,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="C6 Bank"
+                            android:textAlignment="textStart"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
-                            android:layout_marginLeft="10dp"
                             tools:ignore="RtlCompat" />
 
                         <ImageView
@@ -623,9 +643,9 @@
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="Engenheiro de Dados"
-                            android:textColor="@color/background_gray"
+                            android:textAlignment="textStart"
+
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
 
@@ -639,8 +659,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -654,8 +674,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="São Paulo, SP"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -665,8 +685,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -680,8 +700,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Híbrido"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -691,8 +711,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -706,8 +726,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Não informado"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -721,12 +741,12 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:checkable="true"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_height="160dp"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="5dp">
+                android:layout_marginVertical="5dp"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -747,14 +767,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="Spotify"
+                            android:textAlignment="textStart"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
-                            android:layout_marginLeft="10dp"
                             tools:ignore="RtlCompat" />
 
                         <ImageView
@@ -776,9 +796,9 @@
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="Desenvolvedor IOS Junior"
-                            android:textColor="@color/background_gray"
+                            android:textAlignment="textStart"
+
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
 
@@ -792,8 +812,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -807,8 +827,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="São Paulo, SP"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -818,8 +838,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -833,8 +853,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Remoto"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -844,8 +864,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -859,8 +879,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="R$ 5400,00 até 6200,00"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -874,12 +894,12 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:checkable="true"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_height="160dp"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="5dp">
+                android:layout_marginVertical="5dp"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -900,14 +920,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="Banco Next"
+                            android:textAlignment="textStart"
                             android:textColor="@color/light_title_gray"
                             android:textSize="15dp"
-                            android:layout_marginLeft="10dp"
                             tools:ignore="RtlCompat" />
 
                         <ImageView
@@ -929,9 +949,9 @@
                             android:layout_weight="4"
                             android:fontFamily="@font/poppins_bold"
                             android:gravity="center_vertical"
-                            android:textAlignment="textStart"
                             android:text="Tech Lead"
-                            android:textColor="@color/background_gray"
+                            android:textAlignment="textStart"
+
                             android:textSize="20dp"
                             tools:ignore="RtlCompat" />
 
@@ -945,8 +965,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -960,8 +980,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="São Paulo, SP"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -971,8 +991,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -986,8 +1006,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Remoto"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -997,8 +1017,8 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginBottom="2dp">
+                            android:layout_marginBottom="2dp"
+                            android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="20dp"
@@ -1012,8 +1032,8 @@
                                 android:layout_weight="4"
                                 android:fontFamily="@font/poppins_bold"
                                 android:gravity="center_vertical"
-                                android:textAlignment="textStart"
                                 android:text="Não informado"
+                                android:textAlignment="textStart"
                                 android:textColor="@color/light_title_gray"
                                 android:textSize="12dp"
                                 tools:ignore="RtlCompat" />
@@ -1024,7 +1044,7 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
