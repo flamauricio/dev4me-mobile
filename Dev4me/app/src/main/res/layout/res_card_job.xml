@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/feedUserCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imageCompany"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/accenture_logo" />
+
+                <TextView
+                    android:id="@+id/nameCompany"
+                    tools:ignore="RtlCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center_vertical"
+                    android:text="Accenture"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/light_title_gray"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/bookmarkIcon"
+                    app:tint="@color/light_blue"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bookmark_svgrepo_com" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/jobTitle"
+                    tools:ignore="RtlCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center_vertical"
+                    android:text="Desenvolvedor Mobile Junior"
+                    android:textAlignment="textStart"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        app:tint="@color/light_blue"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_round_stairs_24" />
+
+                    <TextView
+                        android:id="@+id/level"
+                        tools:ignore="RtlCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_vertical"
+                        android:text="Júnior"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/light_title_gray"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        app:tint="@color/light_blue"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/location_on_fill1_wght400_grad0_opsz48" />
+
+                    <TextView
+                        android:id="@+id/localization"
+                        tools:ignore="RtlCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_vertical"
+                        android:text="São Paulo, SP"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/light_title_gray"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        app:tint="@color/light_blue"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/description_fill1_wght400_grad0_opsz48" />
+
+                    <TextView
+                        android:id="@+id/contract"
+                        tools:ignore="RtlCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_vertical"
+                        android:text="Híbrido"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/light_title_gray"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        app:tint="@color/light_blue"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/paid_fill1_wght400_grad0_opsz48" />
+
+                    <TextView
+                        android:id="@+id/salary"
+                        tools:ignore="RtlCompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_vertical"
+                        android:text="R$ 3500,00 até 4500,00"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/light_title_gray"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
