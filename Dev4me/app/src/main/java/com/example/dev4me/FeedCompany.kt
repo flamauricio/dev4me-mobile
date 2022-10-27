@@ -14,10 +14,10 @@ class FeedCompany : AppCompatActivity() {
         binding = ActivityFeedCompanyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.personCard1.setOnClickListener {
-            val navigatePersonProfile = Intent(this, PersonProfileView::class.java)
-            startActivity(navigatePersonProfile)
-        }
+//        binding.personCard1.setOnClickListener {
+//            val navigatePersonProfile = Intent(this, PersonProfileView::class.java)
+//            startActivity(navigatePersonProfile)
+//        }
 
         binding.profileIcon.setOnClickListener {
             val navigateToProfile = Intent(this, CompanyMenu::class.java)
