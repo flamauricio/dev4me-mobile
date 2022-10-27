@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <com.google.android.material.card.MaterialCardView
@@ -35,7 +35,6 @@
 
                 <TextView
                     android:id="@+id/nameCompany"
-                    tools:ignore="RtlCompat"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
@@ -45,14 +44,15 @@
                     android:text="Accenture"
                     android:textAlignment="textStart"
                     android:textColor="@color/light_title_gray"
-                    android:textSize="15dp" />
+                    android:textSize="15dp"
+                    tools:ignore="RtlCompat" />
 
                 <ImageView
                     android:id="@+id/bookmarkIcon"
-                    app:tint="@color/light_blue"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/bookmark_svgrepo_com" />
+                    android:src="@drawable/bookmark_svgrepo_com"
+                    app:tint="@color/light_gray" />
 
             </LinearLayout>
 
@@ -63,7 +63,6 @@
 
                 <TextView
                     android:id="@+id/jobTitle"
-                    tools:ignore="RtlCompat"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
@@ -71,7 +70,8 @@
                     android:gravity="center_vertical"
                     android:text="Desenvolvedor Mobile Junior"
                     android:textAlignment="textStart"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    tools:ignore="RtlCompat" />
 
             </LinearLayout>
 
@@ -88,14 +88,13 @@
 
 
                     <ImageView
-                        app:tint="@color/light_blue"
                         android:layout_width="20dp"
                         android:layout_height="15dp"
-                        android:src="@drawable/ic_round_stairs_24" />
+                        android:src="@drawable/ic_round_stairs_24"
+                        app:tint="@color/light_blue" />
 
                     <TextView
                         android:id="@+id/level"
-                        tools:ignore="RtlCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
@@ -104,7 +103,8 @@
                         android:text="Júnior"
                         android:textAlignment="textStart"
                         android:textColor="@color/light_title_gray"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        tools:ignore="RtlCompat" />
 
                 </LinearLayout>
 
@@ -116,14 +116,13 @@
 
 
                     <ImageView
-                        app:tint="@color/light_blue"
                         android:layout_width="20dp"
                         android:layout_height="15dp"
-                        android:src="@drawable/location_on_fill1_wght400_grad0_opsz48" />
+                        android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
+                        app:tint="@color/light_blue" />
 
                     <TextView
                         android:id="@+id/localization"
-                        tools:ignore="RtlCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
@@ -132,7 +131,8 @@
                         android:text="São Paulo, SP"
                         android:textAlignment="textStart"
                         android:textColor="@color/light_title_gray"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        tools:ignore="RtlCompat" />
 
                 </LinearLayout>
 
@@ -143,14 +143,13 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        app:tint="@color/light_blue"
                         android:layout_width="20dp"
                         android:layout_height="15dp"
-                        android:src="@drawable/description_fill1_wght400_grad0_opsz48" />
+                        android:src="@drawable/description_fill1_wght400_grad0_opsz48"
+                        app:tint="@color/light_blue" />
 
                     <TextView
                         android:id="@+id/contract"
-                        tools:ignore="RtlCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
@@ -159,7 +158,8 @@
                         android:text="Híbrido"
                         android:textAlignment="textStart"
                         android:textColor="@color/light_title_gray"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        tools:ignore="RtlCompat" />
 
                 </LinearLayout>
 
@@ -170,14 +170,13 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        app:tint="@color/light_blue"
                         android:layout_width="20dp"
                         android:layout_height="15dp"
-                        android:src="@drawable/paid_fill1_wght400_grad0_opsz48" />
+                        android:src="@drawable/paid_fill1_wght400_grad0_opsz48"
+                        app:tint="@color/light_blue" />
 
                     <TextView
                         android:id="@+id/salary"
-                        tools:ignore="RtlCompat"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
@@ -186,7 +185,8 @@
                         android:text="R$ 3500,00 até 4500,00"
                         android:textAlignment="textStart"
                         android:textColor="@color/light_title_gray"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        tools:ignore="RtlCompat" />
 
                 </LinearLayout>
 
