@@ -12,5 +12,6 @@ class JobRequest(
     val requisitos: String,
     val level: String,
     val disponivel: Boolean,
-    val fkEmpresa: Int
+    val fkEmpresa: Int,
+    val nomeEmpresa: String
 )

@@ -3,6 +3,7 @@ package com.example.dev4me
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dev4me.databinding.ActivityFeedUserBinding
 import com.example.dev4me.endpoints.Vaga
 import com.example.dev4me.retrofit.Rest
@@ -15,14 +16,22 @@ import retrofit2.Response
 class FeedUser : AppCompatActivity() {
 
     private lateinit var binding: ActivityFeedUserBinding
+    private lateinit var adapterJobs: AdapterJobs
+
     val retrofit = Rest.getInstance()
-    var jobsList: List<JsonObject>? = null
+    var jobsList: List<JsonObject> = listOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFeedUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
         bringJobs()
+
+        val recyclerViewJobs = binding.recyclerViewFeedUser
+        recyclerViewJobs.layoutManager = LinearLayoutManager(this)
+        recyclerViewJobs.setHasFixedSize(true)
+        adapterJobs = AdapterJobs(this, jobsList)
+        recyclerViewJobs.adapter = adapterJobs
 
 //        binding.feedUserCard1.setOnClickListener {
 //            val navigateToOpenedCard = Intent(this, OpenedCardJob::class.java)
@@ -52,7 +61,7 @@ class FeedUser : AppCompatActivity() {
                     response: Response<List<JsonObject>>
                 ) {
                     if (response.code() == 200) {
-                        jobsList = response.body()
+                        jobsList = response.body()!!
                         configRecyclerView(jobsList)
                     }
                 }
