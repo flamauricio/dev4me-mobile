@@ -1,6 +1,6 @@
 package com.example.dev4me.dto
 
-class UsuarioSenhaRequest(
+class SenhaRequest(
     val id: Int,
     val senha: String,
     val novaSenha: String
