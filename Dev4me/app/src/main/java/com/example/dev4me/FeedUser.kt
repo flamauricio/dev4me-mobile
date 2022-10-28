@@ -16,12 +16,12 @@ class FeedUser : AppCompatActivity() {
 
     private lateinit var binding: ActivityFeedUserBinding
     val retrofit = Rest.getInstance()
+    var jobsList: List<JsonObject>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFeedUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        configRecyclerView()
         bringJobs()
 
 //        binding.feedUserCard1.setOnClickListener {
@@ -36,8 +36,7 @@ class FeedUser : AppCompatActivity() {
 
     }
 
-    private fun configRecyclerView() {
-        // Trazer lista de vagas
+    private fun configRecyclerView(jobsList: List<JsonObject>?) {
 
     }
 
@@ -53,7 +52,8 @@ class FeedUser : AppCompatActivity() {
                     response: Response<List<JsonObject>>
                 ) {
                     if (response.code() == 200) {
-                        // mostra as vagas no feed do usuário
+                        jobsList = response.body()
+                        configRecyclerView(jobsList)
                     }
                 }
 
