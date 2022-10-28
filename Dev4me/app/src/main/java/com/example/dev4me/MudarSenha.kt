@@ -4,6 +4,8 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.dev4me.databinding.ActivityMudarSenhaBinding
+import com.example.dev4me.dto.SenhaRequest
+import com.example.dev4me.endpoints.Empresa
 import com.example.dev4me.endpoints.Usuario
 import com.example.dev4me.retrofit.Rest
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -48,12 +50,64 @@ class MudarSenha : AppCompatActivity() {
             return
         }
 
-        val patchSenhaUsuario = retrofit.create(
-            Usuario::class.java
+        val tipoUsuario = prefs.getString("tipoUsuario", "")
+
+        if (tipoUsuario == "") {
+            MaterialAlertDialogBuilder(this@MudarSenha)
+                .setMessage("Erro... Favor, refazer o login. Tipo de usuário não encontrado.")
+                .show()
+            return
+        }
+
+        if (tipoUsuario == "candidato") {
+            val patchSenhaUsuario = retrofit.create(
+                Usuario::class.java
+            )
+
+            val senhaRequest = SenhaRequest(
+                id,
+                senhaAtual.text.toString(),
+                novaSenha.text.toString()
+            )
+
+            patchSenhaUsuario.patchSenhaUsuario(id, senhaRequest).enqueue(object : retrofit2.Callback<Unit> {
+                override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
+                    if (response.code() == 200) {
+                        MaterialAlertDialogBuilder(this@MudarSenha)
+                            .setMessage("Senha atualizada com sucesso!")
+                            .show()
+                        return
+                    }
+
+                    if (response.code() == 404) {
+                        MaterialAlertDialogBuilder(this@MudarSenha)
+                            .setMessage("Senha atual não confere")
+                            .show()
+                    }
+                }
+
+                override fun onFailure(call: Call<Unit>, t: Throwable) {
+                    MaterialAlertDialogBuilder(this@MudarSenha)
+                        .setMessage(t.message)
+                        .show()
+                }
+            })
+
+            return
+        }
+
+        val patchSenhaEmpresa = retrofit.create(
+            Empresa::class.java
         )
 
+        val senhaRequest = SenhaRequest(
+            id,
+            senhaAtual.text.toString(),
+            novaSenha.text.toString()
+        )
 
-        patchSenhaUsuario.patchSenhaUsuario(id).enqueue(object : retrofit2.Callback<Unit> {
+        patchSenhaEmpresa.patchSenhaEmpresa(id, senhaRequest)
+            .enqueue(object : retrofit2.Callback<Unit> {
             override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
                 if (response.code() == 200) {
                     MaterialAlertDialogBuilder(this@MudarSenha)
