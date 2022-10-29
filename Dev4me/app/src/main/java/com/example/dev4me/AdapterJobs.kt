@@ -25,11 +25,12 @@ class AdapterJobs(private val context: Context, private val jobsList: List<JsonO
 
         val faixaSalarialMin = jobsList.get(position).get("faixaSalarialMin").toString()
         val faixaSalarialMax = jobsList.get(position).get("faixaSalarialMax").toString()
+        val empresa: JsonObject = jobsList.get(position).get("empresa") as JsonObject
 
         // imagem mockada
         holder.imageCompany.setImageResource(R.drawable.world)
         holder.localization.text = jobsList.get(position).get("localizacao").toString()
-        //holder.nameCompany.text = jobsList.get(position).get("empresa.nome").toString()
+        holder.nameCompany.text = empresa.get("nome").toString()
         holder.jobTitle.text = jobsList.get(position).get("titulo").toString()
         holder.level.text = jobsList.get(position).get("level").toString()
         holder.contract.text = jobsList.get(position).get("contrato").toString()
