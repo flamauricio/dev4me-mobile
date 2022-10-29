@@ -74,7 +74,7 @@
         android:orientation="vertical"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:visibility="visible"
+        android:visibility="gone"
         >
         <TextView
             android:layout_width="match_parent"
@@ -90,6 +90,7 @@
             android:hint="@string/titulo_vaga_hint">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tituloVaga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
@@ -106,28 +107,28 @@
             android:layout_marginTop="10dp"
             />
             <RadioGroup
-                android:id="@+id/radioGroup"
-                android:checkedButton="@+id/radio_button_1"
+                android:id="@+id/tipoContratoRadio"
+                android:checkedButton="@+id/remoto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
                 <RadioButton
-                    android:id="@+id/radio_button_1"
+                    android:id="@+id/remoto"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/remoto"
                     android:layout_weight="1"
                     />
                 <RadioButton
-                    android:id="@+id/radio_button_2"
+                    android:id="@+id/presencial"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/presencial"
                     android:layout_weight="1"
                     />
                 <RadioButton
-                    android:id="@+id/radio_button_3"
+                    android:id="@+id/hibrido"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/hibrido"
@@ -146,27 +147,27 @@
             />
         <RadioGroup
             android:id="@+id/radioGroupLevel"
-            android:checkedButton="@+id/radio_button_level_1"
+            android:checkedButton="@+id/junior"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
             <RadioButton
-                android:id="@+id/radio_button_level_1"
+                android:id="@+id/junior"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/level_junior"
                 android:layout_weight="1"
                 />
             <RadioButton
-                android:id="@+id/radio_button_level_2"
+                android:id="@+id/pleno"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/level_pleno"
                 android:layout_weight="1"
                 />
             <RadioButton
-                android:id="@+id/radio_button_level_3"
+                android:id="@+id/senior"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/level_Senior"
@@ -189,12 +190,14 @@
             android:hint="@string/localizacao_hint">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/localizacao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/buttonAvancarUm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -219,10 +222,11 @@
         android:orientation="vertical"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:visibility="gone"
+        android:visibility="visible"
         >
 
         <Button
+            android:id="@+id/addTagsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tags"
@@ -231,6 +235,7 @@
             />
 
         <ScrollView
+            android:id="@+id/tagsScrollView"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             >
@@ -271,6 +276,7 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/valorMinimo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     />
@@ -285,6 +291,7 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/valorMaximo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     />
@@ -292,6 +299,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/buttonAvancarDois"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
