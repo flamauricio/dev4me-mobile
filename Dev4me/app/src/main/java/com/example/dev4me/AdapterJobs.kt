@@ -1,5 +1,6 @@
 package com.example.dev4me
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -19,17 +20,20 @@ class AdapterJobs(private val context: Context, private val jobsList: List<JsonO
     }
 
     // exibe a lista
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: JobViewHolder, position: Int) {
-        // pega a imagem da empresa
-        // holder.imageCompany.setImageURI() = jobsList[position]
+
+        val faixaSalarialMin = jobsList.get(position).get("faixaSalarialMin").toString()
+        val faixaSalarialMax = jobsList.get(position).get("faixaSalarialMax").toString()
+
+        // imagem mockada
         holder.imageCompany.setImageResource(R.drawable.world)
-//        holder.nameCompany.text = jobsList[position].nomeEmpresa
-//        holder.jobTitle.text = jobsList[position].titulo
-//        holder.level.text = jobsList[position].level
-//        holder.localization.text = jobsList[position].localizacao
-//        holder.contract.text = jobsList[position].contrato
-        // implementar String formatada da faixa salarial
-        holder.salary.text = "Salário Min - Salário Max"
+        holder.localization.text = jobsList.get(position).get("localizacao").toString()
+        //holder.nameCompany.text = jobsList.get(position).get("empresa.nome").toString()
+        holder.jobTitle.text = jobsList.get(position).get("titulo").toString()
+        holder.level.text = jobsList.get(position).get("level").toString()
+        holder.contract.text = jobsList.get(position).get("contrato").toString()
+        holder.salary.text = "R$ $faixaSalarialMin até $faixaSalarialMax"
     }
 
     override fun getItemCount(): Int {
