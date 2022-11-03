@@ -61,7 +61,6 @@ class CompanyMenu : AppCompatActivity() {
             val prefs: SharedPreferences = getSharedPreferences("chaveGeral-Xml", MODE_PRIVATE)
             val editor: SharedPreferences.Editor = prefs.edit()
 
-            editor.putInt("id", 0)
             editor.putString("tipoUsuario", "")
             editor.commit()
 
@@ -98,9 +97,17 @@ class CompanyMenu : AppCompatActivity() {
 
     private fun plotarDadosNaTela(usuario: JsonObject?) {
         val nome: String = usuario?.get("nome").toString()
-        val localidade: String = usuario?.get("localidade").toString()
+        val email: String = usuario?.get("email").toString()
+        val cnpj: String = usuario?.get("cnpj").toString()
 
         binding.nome.text = nome.substring(1, nome.length-1)
-        binding.nome.text = localidade.substring(1, localidade.length-1)
+        if (cnpj != "null") binding.cnpj.text = cnpj.substring(1, cnpj.length-1)
+
+        val prefs: SharedPreferences = getSharedPreferences("chaveGeral-Xml", MODE_PRIVATE)
+        val editor = prefs.edit()
+        editor.putString("nome", nome.substring(1, nome.length-1))
+        editor.putString("email", email.substring(1, email.length-1))
+        editor.putString("cnpj", cnpj.substring(1, cnpj.length-1))
+        editor.commit()
     }
 }

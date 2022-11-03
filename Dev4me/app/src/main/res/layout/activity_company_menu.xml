@@ -84,7 +84,7 @@
                     android:text=""
                     />
                 <TextView
-                    android:id="@+id/localidade"
+                    android:id="@+id/cnpj"
                     android:fontFamily="@font/poppins_regular"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"

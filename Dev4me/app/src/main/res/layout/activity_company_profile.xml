@@ -94,14 +94,15 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/nome_empresa_hint"
                     android:textColorHint="@color/white"
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nome"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/light_gray"
+                        android:hint="@string/nome_empresa_hint"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -109,23 +110,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/localizacao"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/poppins_bold"
-                    android:textSize="20dp"
                     android:layout_marginTop="15dp"
-                    />
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/email"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/localizacao_perfil_empresa_hint"
                     android:textColorHint="@color/white"
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/light_gray"
+                        android:hint="Digite aqui o email da empresa"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -133,12 +135,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/descricao_empresa"
+                    android:text="CNPJ"
                     android:textColor="@color/white"
                     android:fontFamily="@font/poppins_bold"
                     android:textSize="20dp"
                     android:layout_marginTop="15dp"
                     />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -146,47 +149,17 @@
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cnpj"
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:gravity="start"
-                        android:inputType="textMultiLine"
-                        android:hint="@string/descricao_empresa_hint"
-                        android:maxLines="20"
-                        android:minLines="2"
-                        android:scrollbars="vertical"
+                        android:layout_height="wrap_content"
                         android:background="@color/light_gray"
+                        android:hint="Digite aqui o cnpj da empresa"
                         />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/visao_valores_missao_empresa"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/poppins_bold"
-                    android:textSize="20dp"
-                    android:layout_marginTop="15dp"
-                    />
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/white"
-                    >
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:gravity="start"
-                        android:inputType="textMultiLine"
-                        android:hint="@string/visao_valores_missao_empresa_hint"
-                        android:maxLines="20"
-                        android:minLines="2"
-                        android:scrollbars="vertical"
-                        android:background="@color/light_gray"
-                        />
 
-                </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -198,10 +171,11 @@
                     >
 
                     <Button
-                        android:id="@+id/containedButton"
+                        android:id="@+id/salvar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/salvar"
+                        android:layout_marginTop="10dp"
                         android:backgroundTint="@color/ligheter_blue"
                         />
                 </LinearLayout>
