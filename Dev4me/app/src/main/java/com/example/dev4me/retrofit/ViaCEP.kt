@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ViaCEP {
-    val baseUrl = "viacep.com.br/ws"
+    val baseUrl = "https://viacep.com.br/ws/"
     //viacep.com.br/ws/01001000/json/
 
     fun getInstance(): Retrofit {

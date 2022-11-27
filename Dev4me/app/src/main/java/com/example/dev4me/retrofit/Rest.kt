@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object Rest {
-    val baseUrl = "https://dev4me.ddns.net"
+    val baseUrl = "https://dev4me.ddns.net:8080"
 
     fun getInstance(): Retrofit {
         return Retrofit
