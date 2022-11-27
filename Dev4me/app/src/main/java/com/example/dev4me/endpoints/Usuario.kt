@@ -12,6 +12,9 @@ interface Usuario {
     @GET("/usuarios/perfil/{id}")
     fun getUsuario(@Path("id") id: Int): Call<JsonObject>
 
+    @GET("/usuarios")
+    fun getUsers(): Call<List<JsonObject>>
+
     @PATCH("/usuarios/senha/{id}")
     fun patchSenhaUsuario(@Path("id") id: Int, @Body senhaRequest: SenhaRequest): Call<Unit>
 }

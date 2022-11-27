@@ -53,22 +53,10 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="10dp">
 
-                <TextView
-                    android:id="@+id/titleUser"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:fontFamily="@font/poppins_bold"
-                    android:gravity="center"
-                    android:text="Full Stack Developer"
-                    android:textAlignment="textStart"
-
-                    android:textSize="15dp"
-                    tools:ignore="RtlCompat" />
-
                 <ImageView
-                    android:layout_width="20dp"
+                    android:layout_width="14dp"
                     android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:src="@drawable/location_on_fill1_wght400_grad0_opsz48"
