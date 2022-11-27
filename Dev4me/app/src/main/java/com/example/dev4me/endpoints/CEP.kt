@@ -5,7 +5,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface ViaCEP {
+interface CEP {
     @GET("/{cep}/json")
     fun getCEP(@Path("cep") id: Int): Call<JsonObject>
 }

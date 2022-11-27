@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.dev4me.databinding.ActivityFeedCompanyBinding
 import com.example.dev4me.dto.UserRequest
 import com.example.dev4me.dto.UsuarioRequest
+import com.example.dev4me.endpoints.CEP
 import com.example.dev4me.endpoints.Usuario
 import com.example.dev4me.endpoints.Vaga
 import com.example.dev4me.retrofit.Rest
@@ -30,7 +32,7 @@ class FeedCompany : AppCompatActivity() {
 
     val retrofit = Rest.getInstance()
     val viaCEP = ViaCEP.getInstance()
-    var usersList: List<JsonObject> = listOf()
+    var usersList: List<UserRequest> = listOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,10 +59,10 @@ class FeedCompany : AppCompatActivity() {
         )
 
         usuarioRequest.getUsers().enqueue(
-            object : Callback<List<JsonObject>> {
+            object : Callback<List<UserRequest>> {
                 override fun onResponse(
-                    call: Call<List<JsonObject>>,
-                    response: Response<List<JsonObject>>
+                    call: Call<List<UserRequest>>,
+                    response: Response<List<UserRequest>>
                 ) {
                     if (response.code() == 200) {
                         usersList = response.body()!!
@@ -68,7 +70,7 @@ class FeedCompany : AppCompatActivity() {
                     }
                 }
 
-                override fun onFailure(call: Call<List<JsonObject>>, t: Throwable) {
+                override fun onFailure(call: Call<List<UserRequest>>, t: Throwable) {
                     MaterialAlertDialogBuilder(this@FeedCompany)
                         .setMessage(resources.getString(R.string.api_error))
                         .show()
@@ -78,28 +80,28 @@ class FeedCompany : AppCompatActivity() {
     }
 
      fun getCEP(cep: Int) {
-        val getUserRequest = retrofit.create(
-            Usuario::class.java
+        val getCEP = retrofit.create(
+            CEP::class.java
         )
-        getUserRequest.getUsuario(id).enqueue(object : Callback<JsonObject> {
+         getCEP.getCEP(cep).enqueue(object : Callback<JsonObject> {
             override fun onResponse(
                 call: Call<JsonObject>,
                 response: Response<JsonObject>
             ) {
                 if (response.code() == 200) {
-                    plotarDadosNaTela(response.body())
+                    // Utilazar o CEP para mostrar a cidade e estado do usuário
                 }
             }
 
             override fun onFailure(call: Call<JsonObject>, t: Throwable) {
-                MaterialAlertDialogBuilder(this@UserMenu)
+                MaterialAlertDialogBuilder(this@FeedCompany)
                     .setMessage(t.message)
                     .show()
             }
         })
     }
 
-    private fun startRecyclerView(usersList: List<JsonObject>?) {
+    private fun startRecyclerView(usersList: List<UserRequest>) {
         val recyclerContainer = binding.recyclerViewFeedCompany
         recyclerContainer.layoutManager = LinearLayoutManager(
             baseContext
@@ -143,6 +145,10 @@ class UsersAdapter(
     ) : RecyclerView.ViewHolder(layoutCard) {
         fun sync(user: UserRequest) {
 
+            val card = layoutCard
+                .findViewById<com.google.android.material.card.MaterialCardView>(
+                    R.id.personCard
+                )
             val nameUser = layoutCard
                 .findViewById<TextView>(R.id.nameUser)
             val localization = layoutCard
@@ -151,29 +157,22 @@ class UsersAdapter(
                 .findViewById<TextView>(R.id.userDescription)
 
             nameUser.text = user.nome
-
-            tvTitulo.text = filme.titulo
-            ivImagem.setImageResource(filme.imagem)
-            ivImagem.setOnClickListener {
-                onclick("Você clicou no card X")
+            localization.text = user.cep
+            userDescription.text = user.descUsuario
+            card.setOnClickListener {
+                // Abre o PersonProfileView
             }
-
         }
     }
 
     override fun onBindViewHolder(
         holder: RecyclerView.ViewHolder, position: Int
     ) {
-        (holder as FilmeHolder).vincular(filmes[position])
+        (holder as UserHolder).sync(usersList[position])
     }
 
     override fun getItemCount(): Int {
-        return filmes.size
+        return usersList.size
     }
 
 }
-
-data class Filme(
-    val titulo: String,
-    val imagem: Int
-)
