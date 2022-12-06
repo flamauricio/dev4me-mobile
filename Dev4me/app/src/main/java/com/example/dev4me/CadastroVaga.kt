@@ -5,10 +5,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.dev4me.databinding.ActivityCadastroVagaBinding
+import com.example.dev4me.endpoints.Tag
+import retrofit2.Callback
+import com.example.dev4me.retrofit.Rest
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.gson.JsonObject
+import retrofit2.Call
+import retrofit2.Response
 
 class CadastroVaga : AppCompatActivity() {
 
     private lateinit var binding: ActivityCadastroVagaBinding
+    val retrofit = Rest.getInstance()
     var titulo: String? = null
     var localizacao: String? = null
     var tipoContrato: String? = null
@@ -19,6 +27,7 @@ class CadastroVaga : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCadastroVagaBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        getTags()
 
         binding.profileIcon.setOnClickListener {
             val navigateToProfile = Intent(this, CompanyMenu::class.java)
@@ -32,6 +41,23 @@ class CadastroVaga : AppCompatActivity() {
         binding.buttonAvancarDois.setOnClickListener {
             avancarPassoTres()
         }
+    }
+
+    private fun getTags() {
+        val getTagsRequest = retrofit.create(Tag::class.java)
+        getTagsRequest.getTags().enqueue(
+            object : Callback<JsonObject> {
+                override fun onResponse(call: Call<JsonObject>, response: Response<JsonObject>) {
+                    MaterialAlertDialogBuilder(this@CadastroVaga)
+                        .setMessage(response.body().toString() )
+                        .show()
+                }
+
+                override fun onFailure(call: Call<JsonObject>, t: Throwable) {
+                    TODO("Not yet implemented")
+                }
+            }
+        )
     }
 
     private fun avancarPassoDois() {

@@ -90,11 +90,11 @@ class UserMenu : AppCompatActivity() {
 
     private fun plotarDadosNaTela(usuario: JsonObject?) {
         val nome: String = usuario?.get("nome").toString()
-        val idade: String = usuario?.get("idade").toString()
-        val localidade: String = usuario?.get("localidade").toString()
+        val cpf: String = usuario?.get("cpf").toString()
+        val telefone: String = usuario?.get("telefone").toString()
 
         binding.nome.text = nome.substring(1, nome.length-1)
-        binding.idade.text = idade.substring(1, idade.length-1)
-        binding.localidade.text = localidade.substring(1, localidade.length-1)
+        binding.cpf.text = cpf.substring(1, cpf.length-1)
+        binding.telefone.text = telefone.substring(1, telefone.length-1)
     }
 }
