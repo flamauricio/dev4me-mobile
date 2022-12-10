@@ -1,5 +1,6 @@
 package com.example.dev4me.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,11 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
+import com.example.dev4me.OpenedCardJob
 import com.example.dev4me.R
-import com.example.dev4me.dto.JobRequest
+import com.example.dev4me.Vaga
 
 class JobsAdapter(
-    private val itemsList: List<JobRequest>,
+    private val itemsList: List<Vaga>,
 ) : RecyclerView.Adapter<JobsAdapter.JobViewHolder>() {
 
     inner class JobViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -36,9 +38,9 @@ class JobsAdapter(
         val item = itemsList[position]
 
         val salaryMin = item.faixaSalarialMin
-        val salaryMax = item.faixaSalarialMin
+        val salaryMax = item.faixaSalarialMax
 
-        holder.nameCompany.text = item.nomeEmpresa
+        holder.nameCompany.text = item.fkEmpresa.nome
         holder.jobTitle.text = item.titulo
         holder.level.text = item.level
         holder.localizationJob.text = item.localizacao
@@ -48,9 +50,10 @@ class JobsAdapter(
         setListeners(holder, item)
     }
 
-    private fun setListeners(holder: JobViewHolder, userCard: JobRequest) {
+    private fun setListeners(holder: JobViewHolder, cardJob: Vaga) {
         holder.cardJob.setOnClickListener {
-            // abrir card com o id
+
+            //val intent = Intent(this, OpenedCardJob::class.java)
         }
     }
 
@@ -58,7 +61,7 @@ class JobsAdapter(
         return itemsList.size
     }
 
-    fun getItem(position: Int): JobRequest {
+    fun getItem(position: Int): Vaga {
         return itemsList[position]
     }
 }

@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dev4me.adapter.JobsAdapter
 import com.example.dev4me.databinding.ActivityFeedUserBinding
-import com.example.dev4me.dto.JobRequest
-import com.example.dev4me.endpoints.Vaga
 import com.example.dev4me.retrofit.Rest
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import retrofit2.Call
@@ -19,7 +17,7 @@ class FeedUser : AppCompatActivity() {
     private lateinit var binding: ActivityFeedUserBinding
 
     val retrofit = Rest.getInstance()
-    var jobsList: List<JobRequest> = listOf()
+    var jobsList: List<com.example.dev4me.Vaga> = listOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,14 +34,14 @@ class FeedUser : AppCompatActivity() {
 
     private fun bringJobs() {
         val jobRequest = retrofit.create(
-            Vaga::class.java
+            com.example.dev4me.endpoints.Vaga::class.java
         )
 
         jobRequest.getVagas().enqueue(
-            object : Callback<List<JobRequest>> {
+            object : Callback<List<com.example.dev4me.Vaga>> {
                 override fun onResponse(
-                    call: Call<List<JobRequest>>,
-                    response: Response<List<JobRequest>>
+                    call: Call<List<com.example.dev4me.Vaga>>,
+                    response: Response<List<com.example.dev4me.Vaga>>
                 ) {
                     if (response.code() == 200) {
                         jobsList = response.body()!!
@@ -56,7 +54,7 @@ class FeedUser : AppCompatActivity() {
                         binding.recyclerViewFeedUser.adapter = adapter
                     }
                 }
-                override fun onFailure(call: Call<List<JobRequest>>, t: Throwable) {
+                override fun onFailure(call: Call<List<com.example.dev4me.Vaga>>, t: Throwable) {
                     MaterialAlertDialogBuilder(this@FeedUser)
                         .setMessage(resources.getString(R.string.api_error))
                         .show()
