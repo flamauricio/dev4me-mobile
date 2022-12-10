@@ -64,9 +64,6 @@ class FeedCompany : AppCompatActivity() {
                 ) {
                     if (response.code() == 200) {
                         usersList = response.body()!!
-                        MaterialAlertDialogBuilder(this@FeedCompany)
-                            .setMessage(usersList.toString())
-                            .show()
                         val layoutManager = LinearLayoutManager(this@FeedCompany)
                         binding.recyclerViewFeedCompany.layoutManager = layoutManager
                         val adapter = UserAdapter(usersList)
