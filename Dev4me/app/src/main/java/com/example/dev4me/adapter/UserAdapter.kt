@@ -1,17 +1,22 @@
 package com.example.dev4me.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.dev4me.OpenedCardJob
 import com.example.dev4me.R
 import com.example.dev4me.dto.UserRequest
 
 class UserAdapter(
     private val itemsList: List<UserRequest>,
+    private val context: Context,
 ) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     inner class UserViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -36,12 +41,15 @@ class UserAdapter(
         holder.localization.text = item.cep
         holder.userDescription.text = item.descUsuario
 
-        setListeners(holder, item)
+        setListeners(holder, item, item.id)
     }
 
-    private fun setListeners(holder: UserViewHolder, userCard: UserRequest) {
+    private fun setListeners(holder: UserViewHolder, userCard: UserRequest, id: Integer) {
         holder.card.setOnClickListener {
-            // abrir card c o id
+
+            val intent = Intent(context, OpenedCardJob::class.java)
+            intent.putExtra("id", id)
+            ContextCompat.startActivity(context, intent, null)
         }
     }
 

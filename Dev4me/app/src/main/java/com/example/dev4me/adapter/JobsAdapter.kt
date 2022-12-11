@@ -61,11 +61,6 @@ class JobsAdapter(
             val intent = Intent(context, OpenedCardJob::class.java)
             intent.putExtra("idVaga", idVaga)
             startActivity(context, intent, null)
-
-//            val prefs: SharedPreferences = getSharedPreferences("chaveGeral-Xml",
-//                AppCompatActivity.MODE_PRIVATE
-//            )
-//            val editor: SharedPreferences.Editor = prefs.edit()
         }
     }
 
