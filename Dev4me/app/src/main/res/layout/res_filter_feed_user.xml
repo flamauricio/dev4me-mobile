@@ -4,15 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/light_gray"
-    tools:context=".FilterUser">
+    android:orientation="vertical"
+    android:background="@color/background_gray">
 
     <LinearLayout
+        android:id="@+id/filterView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:orientation="vertical"
+        android:background="@color/background_gray"
         android:gravity="center"
-        android:orientation="vertical">
+        android:layout_gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
@@ -23,7 +27,8 @@
             android:text="@string/search_by_tag"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:marginVertical="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField"
@@ -114,7 +119,8 @@
             android:text="@string/search_by_local"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:marginVertical="10dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField2"
@@ -170,7 +176,6 @@
             android:gravity="center_vertical"
             android:text="@string/button_search"
             android:paddingHorizontal="40dp"/>
-
     </LinearLayout>
 
 </LinearLayout>
