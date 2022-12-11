@@ -1,5 +1,6 @@
 package com.example.dev4me.adapter
 
+import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dev4me.OpenedCardJob
 import com.example.dev4me.R
@@ -14,6 +16,7 @@ import com.example.dev4me.Vaga
 
 class JobsAdapter(
     private val itemsList: List<Vaga>,
+    private val context: Context,
 ) : RecyclerView.Adapter<JobsAdapter.JobViewHolder>() {
 
     inner class JobViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -47,13 +50,15 @@ class JobsAdapter(
         holder.contract.text = item.contrato
         holder.salary.text = "R\$ $salaryMin até $salaryMax"
 
-        setListeners(holder, item)
+        setListeners(holder, item, item.id)
     }
 
-    private fun setListeners(holder: JobViewHolder, cardJob: Vaga) {
+    private fun setListeners(holder: JobViewHolder, cardJob: Vaga, idVaga: Integer?) {
         holder.cardJob.setOnClickListener {
 
-            //val intent = Intent(this, OpenedCardJob::class.java)
+            val intent = Intent(context, OpenedCardJob::class.java)
+            intent.putExtra("idVaga", idVaga.toString())
+            startActivity(context, intent, null)
         }
     }
 

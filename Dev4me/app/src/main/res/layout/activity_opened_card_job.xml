@@ -67,11 +67,13 @@
                 android:layout_marginVertical="20dp">
 
                 <ImageView
+                    android:id="@+id/vagaCompanyImage"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/accenture_logo" />
 
                 <TextView
+                    android:id="@+id/vagaCompanyName"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
@@ -97,6 +99,7 @@
                 android:layout_marginVertical="20dp">
 
                 <TextView
+                    android:id="@+id/vagaTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
@@ -134,6 +137,7 @@
                         app:tint="@color/light_blue" />
 
                     <TextView
+                        android:id="@+id/vagaLevel"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
@@ -160,6 +164,7 @@
                         app:tint="@color/light_blue" />
 
                     <TextView
+                        android:id="@+id/vagaLocalization"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
@@ -186,6 +191,7 @@
                         app:tint="@color/light_blue" />
 
                     <TextView
+                        android:id="@+id/vagaContract"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
@@ -212,6 +218,7 @@
                         app:tint="@color/light_blue" />
 
                     <TextView
+                        android:id="@+id/vagaSalary"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="4"
@@ -235,6 +242,7 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
+                    android:id="@+id/vagaTags"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
@@ -324,6 +332,7 @@
                     tools:ignore="RtlCompat" />
 
                 <TextView
+                    android:id="@+id/vagaDescription"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
@@ -362,6 +371,7 @@
                     tools:ignore="RtlCompat" />
 
                 <TextView
+                    android:id="@+id/vagaActivities"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
@@ -400,6 +410,7 @@
                     tools:ignore="RtlCompat" />
 
                 <TextView
+                    android:id="@+id/vagaRequiriments"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
