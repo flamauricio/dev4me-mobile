@@ -4,23 +4,23 @@ import java.time.LocalDate
 
 data class Usuario(
 
-    private val id: Integer,
+    val id: Integer,
 
-    private val nome: String,
+    val nome: String,
 
-    private val email: String,
+    val email: String,
 
-    private val senha: String,
+    val senha: String,
 
-    private val dataNasc: LocalDate,
+    val dataNasc: LocalDate,
 
-    private val descUsuario: String,
+    val descUsuario: String,
 
-    private val cpf: String,
+    val cpf: String,
 
-    private val telefone: String,
+    val telefone: String,
 
-    private val cep: String,
+    val cep: String,
 
-    private val endereco: String
+    val endereco: String
 )

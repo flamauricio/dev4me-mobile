@@ -64,9 +64,9 @@ class OpenedCardJob : AppCompatActivity() {
                     if (response.code() == 200) {
 
                         val vagaInfos = response.body()!!
-                        MaterialAlertDialogBuilder(this@OpenedCardJob)
-                            .setMessage(vagaInfos.toString())
-                            .show()
+//                        MaterialAlertDialogBuilder(this@OpenedCardJob)
+//                            .setMessage(vagaInfos.toString())
+//                            .show()
 
                         vagaInfos.tags.forEach {
                             val tag = layoutInflater.inflate(R.layout.res_tag, null)
@@ -87,18 +87,6 @@ class OpenedCardJob : AppCompatActivity() {
                         val level = vagaInfos.vaga.level
                         val disponivel = vagaInfos.vaga.disponivel
                         val nomeEmpresa = vagaInfos.vaga.fkEmpresa.nome
-
-                        println("-------------------------------------------")
-                        println("-------------------------------------------")
-                        println("-------------------------------------------")
-                        println("-------------------------------------------")
-                        println("-------------------------------------------")
-                        println(titulo)
-                        println("-------------------------------------------")
-                        println("-------------------------------------------")
-                        println("-------------------------------------------")
-                        println("-------------------------------------------")
-                        println("-------------------------------------------")
 
                         binding.vagaTitle.text = titulo
                         binding.vagaContract.text = contrato
