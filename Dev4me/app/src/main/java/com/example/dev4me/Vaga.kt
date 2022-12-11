@@ -1,7 +1,7 @@
 package com.example.dev4me
 
 data class Vaga (
-    val id: Integer? = null,
+    val idVaga: Integer? = null,
     val titulo: String? = null,
     val contrato: String? = null,
     val localizacao: String? = null,

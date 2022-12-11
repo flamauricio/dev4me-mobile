@@ -92,7 +92,6 @@
                     android:layout_marginTop="15dp"
                     />
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/nome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/nome_hint"
@@ -100,6 +99,7 @@
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nome"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/light_gray" />
@@ -109,7 +109,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/idade"
+                    android:text="CPF"
                     android:textColor="@color/white"
                     android:fontFamily="@font/poppins_bold"
                     android:textSize="20dp"
@@ -118,11 +118,12 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/idade_hint"
+                    android:hint="digite aqui o seu CPF"
                     android:textColorHint="@color/white"
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cpf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/light_gray"
@@ -140,7 +141,6 @@
                     android:layout_marginTop="15dp"
                     />
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/localidade"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/localizacao_perfil_usuario_hint"
@@ -148,6 +148,33 @@
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/localidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/light_gray"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telefone"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Digite o seu telefone"
+                    android:textColorHint="@color/white"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/telefone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/light_gray"
@@ -171,40 +198,12 @@
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/descricao"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:gravity="start"
                         android:inputType="textMultiLine"
                         android:hint="@string/breve_descricao_perfil_hint"
-                        android:maxLines="20"
-                        android:minLines="2"
-                        android:scrollbars="vertical"
-                        android:background="@color/light_gray"
-                        />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/carreira_experiencias"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/poppins_bold"
-                    android:textSize="20dp"
-                    android:layout_marginTop="15dp"
-                    />
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColorHint="@color/white"
-                    >
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:gravity="start"
-                        android:inputType="textMultiLine"
-                        android:hint="@string/carreira_experiencias_hint"
                         android:maxLines="20"
                         android:minLines="2"
                         android:scrollbars="vertical"

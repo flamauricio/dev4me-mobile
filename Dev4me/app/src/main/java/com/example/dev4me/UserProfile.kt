@@ -26,7 +26,6 @@ class UserProfile : AppCompatActivity() {
             val navigateToProfile = Intent(this, UserMenu::class.java)
             startActivity(navigateToProfile)
         }
-
     }
 
     private fun pegarDadosUsuario(id: Int) {
@@ -53,11 +52,15 @@ class UserProfile : AppCompatActivity() {
 
     private fun plotarDadosNaTela(usuario: JsonObject?) {
         val nome: String = usuario?.get("nome").toString()
-        val idade: String = usuario?.get("idade").toString()
-        val localidade: String = usuario?.get("localidade").toString()
+        val cpf: String = usuario?.get("cpf").toString()
+        val telefone: String = usuario?.get("telefone").toString()
 
-//        binding.nome.h = nome.substring(1, nome.length-1)
-//        binding.idade.text = idade.substring(1, idade.length-1)
-//        binding.localidade.text = localidade.substring(1, localidade.length-1)
+        if (nome != "null") binding.nome.setText(nome.substring(1, nome.length-1))
+        if (cpf != "null") binding.cpf.setText(cpf.substring(1, cpf.length-1))
+        if (telefone != "null") binding.telefone.setText(telefone.substring(1, telefone.length-1))
+        MaterialAlertDialogBuilder(this@UserProfile)
+            .setMessage(nome + cpf + telefone)
+            .show()
+
     }
 }

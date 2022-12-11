@@ -93,8 +93,8 @@ class UserMenu : AppCompatActivity() {
         val cpf: String = usuario?.get("cpf").toString()
         val telefone: String = usuario?.get("telefone").toString()
 
-        binding.nome.text = nome.substring(1, nome.length-1)
-        binding.cpf.text = cpf.substring(1, cpf.length-1)
-        binding.telefone.text = telefone.substring(1, telefone.length-1)
+        if (nome != "null") binding.nome.setText(nome.substring(1, nome.length-1))
+        if (cpf != "null") binding.cpf.setText(cpf.substring(1, cpf.length-1))
+        if (telefone != "null") binding.telefone.setText(telefone.substring(1, telefone.length-1))
     }
 }

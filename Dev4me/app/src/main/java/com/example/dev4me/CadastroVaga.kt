@@ -263,6 +263,7 @@ class CadastroVaga : AppCompatActivity() {
         return deuBom
     }
 
+
     fun salvarTags(vaga: Vaga?) {
         retrofit.create(
             com.example.dev4me.endpoints.Tag::class.java
@@ -270,11 +271,12 @@ class CadastroVaga : AppCompatActivity() {
             TagVagaRequest(
                 selectedTags
             ),
-            vaga?.id
+            vaga?.idVaga
         ).enqueue(object : Callback<Unit> {
             override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
                 MaterialAlertDialogBuilder(this@CadastroVaga).setMessage("Vaga criada com sucesso!")
                     .show()
+                startActivity(Intent(this@CadastroVaga, FeedCompany::class.java))
             }
 
             override fun onFailure(call: Call<Unit>, t: Throwable) {
