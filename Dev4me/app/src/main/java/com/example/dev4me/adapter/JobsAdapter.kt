@@ -2,12 +2,14 @@ package com.example.dev4me.adapter
 
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dev4me.OpenedCardJob
@@ -50,15 +52,20 @@ class JobsAdapter(
         holder.contract.text = item.contrato
         holder.salary.text = "R\$ $salaryMin até $salaryMax"
 
-        setListeners(holder, item, item.id)
+        setListeners(holder, item, item.idVaga)
     }
 
     private fun setListeners(holder: JobViewHolder, cardJob: Vaga, idVaga: Integer?) {
         holder.cardJob.setOnClickListener {
 
             val intent = Intent(context, OpenedCardJob::class.java)
-            intent.putExtra("idVaga", idVaga.toString())
+            intent.putExtra("idVaga", idVaga)
             startActivity(context, intent, null)
+
+//            val prefs: SharedPreferences = getSharedPreferences("chaveGeral-Xml",
+//                AppCompatActivity.MODE_PRIVATE
+//            )
+//            val editor: SharedPreferences.Editor = prefs.edit()
         }
     }
 
