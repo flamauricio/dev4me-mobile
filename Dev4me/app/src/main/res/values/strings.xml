@@ -86,6 +86,7 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="requirements">Requisitos</string>
     <string name="activities">Atividades</string>
     <string name="button_apply_now">Candidatar-se</string>
+    <string name="button_apply_now_active">Se candidatou</string>
 
     PersonProfileView
     <string name="person_description">-Desenvolvimento de aplicações front-end com React;

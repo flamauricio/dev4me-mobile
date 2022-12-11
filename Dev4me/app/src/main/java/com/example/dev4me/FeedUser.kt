@@ -1,5 +1,6 @@
 package com.example.dev4me
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,7 @@ class FeedUser : AppCompatActivity() {
 
     val retrofit = Rest.getInstance()
     var jobsList: List<com.example.dev4me.Vaga> = listOf()
+    val context: Context = this
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +52,7 @@ class FeedUser : AppCompatActivity() {
                             .show()
                         val layoutManager = LinearLayoutManager(this@FeedUser)
                         binding.recyclerViewFeedUser.layoutManager = layoutManager
-                        val adapter = JobsAdapter(jobsList)
+                        val adapter = JobsAdapter(jobsList, context)
                         binding.recyclerViewFeedUser.adapter = adapter
                     }
                 }
