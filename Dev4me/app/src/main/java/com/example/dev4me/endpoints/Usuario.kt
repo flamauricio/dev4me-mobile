@@ -18,4 +18,7 @@ interface Usuario {
 
     @PATCH("/usuarios/senha/{id}")
     fun patchSenhaUsuario(@Path("id") id: Int, @Body senhaRequest: SenhaRequest): Call<Unit>
+
+    @PATCH("/usuarios/alterar-dados")
+    fun patchUsuario(@Body usuario: com.example.dev4me.Usuario): Call<Unit>
 }

@@ -53,7 +53,7 @@ class CompanyProfile : AppCompatActivity() {
 
         if (nome != "null") binding.nome.setText(nome)
         if (email != "null") binding.email.setText(email)
-        if (cnpj != "ul") binding.cnpj.setText(cnpj)
+        if (cnpj != "null") binding.cnpj.setText(cnpj)
     }
 
     fun validarAtributos(): Boolean {

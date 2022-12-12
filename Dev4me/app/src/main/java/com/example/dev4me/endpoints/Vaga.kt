@@ -14,6 +14,9 @@ interface Vaga {
     @GET("/vagas/{id}")
     fun getVagaById(@Path("id")id: Int?): Call<VagaTag>
 
+    @GET("vagas/all/{id}")
+    fun getAllVagasById(@Path("id")id: Int?): Call<List<com.example.dev4me.Vaga>>
+
     @POST("/vagas")
     fun postVaga(@Body vaga: com.example.dev4me.Vaga): Call<com.example.dev4me.Vaga>
 }

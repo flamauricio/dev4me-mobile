@@ -92,9 +92,23 @@ class UserMenu : AppCompatActivity() {
         val nome: String = usuario?.get("nome").toString()
         val cpf: String = usuario?.get("cpf").toString()
         val telefone: String = usuario?.get("telefone").toString()
+        val endereco: String = usuario?.get("endereco").toString()
+        val descricao: String = usuario?.get("descUsuario").toString()
+        val email: String = usuario?.get("email").toString()
 
         if (nome != "null") binding.nome.setText(nome.substring(1, nome.length-1))
         if (cpf != "null") binding.cpf.setText(cpf.substring(1, cpf.length-1))
         if (telefone != "null") binding.telefone.setText(telefone.substring(1, telefone.length-1))
+
+        val prefs: SharedPreferences = getSharedPreferences("chaveGeral-Xml", MODE_PRIVATE)
+        val editor: SharedPreferences.Editor = prefs.edit()
+
+        editor.putString("nome", nome.substring(1, nome.length-1))
+        editor.putString("cpf", cpf.substring(1, cpf.length-1))
+        editor.putString("telefone", telefone.substring(1, telefone.length-1))
+        editor.putString("endereco", endereco.substring(1, endereco.length-1))
+        editor.putString("descricao", descricao.substring(1, descricao.length-1))
+        editor.putString("email", email.substring(1, email.length-1))
+        editor.commit()
     }
 }
