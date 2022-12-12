@@ -11,6 +11,7 @@ import androidx.annotation.NonNull
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dev4me.OpenedCardJob
+import com.example.dev4me.PersonProfileView
 import com.example.dev4me.R
 import com.example.dev4me.dto.UserRequest
 
@@ -44,10 +45,10 @@ class UserAdapter(
         setListeners(holder, item, item.id)
     }
 
-    private fun setListeners(holder: UserViewHolder, userCard: UserRequest, id: Integer) {
+    private fun setListeners(holder: UserViewHolder, userCard: UserRequest, id: Integer?) {
         holder.card.setOnClickListener {
 
-            val intent = Intent(context, OpenedCardJob::class.java)
+            val intent = Intent(context, PersonProfileView::class.java)
             intent.putExtra("id", id)
             ContextCompat.startActivity(context, intent, null)
         }

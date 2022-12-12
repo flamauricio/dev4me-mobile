@@ -1,5 +1,6 @@
 package com.example.dev4me
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,7 +23,6 @@ import com.google.gson.JsonObject
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.time.LocalDate
 
 class FeedCompany : AppCompatActivity() {
 
@@ -31,6 +31,7 @@ class FeedCompany : AppCompatActivity() {
     val retrofit = Rest.getInstance()
     val viaCEP = ViaCEP.getInstance()
     var usersList: List<UserRequest> = listOf()
+    val context: Context = this
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,7 +67,7 @@ class FeedCompany : AppCompatActivity() {
                         usersList = response.body()!!
                         val layoutManager = LinearLayoutManager(this@FeedCompany)
                         binding.recyclerViewFeedCompany.layoutManager = layoutManager
-                        val adapter = UserAdapter(usersList)
+                        val adapter = UserAdapter(usersList, context)
                         binding.recyclerViewFeedCompany.adapter = adapter
                     }
                 }

@@ -27,8 +27,7 @@
             android:text="@string/search_by_tag"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="14sp"
-            android:marginVertical="10dp"/>
+            android:textSize="14sp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField"
@@ -119,8 +118,7 @@
             android:text="@string/search_by_local"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="14sp"
-            android:marginVertical="10dp"/>
+            android:textSize="14sp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField2"
