@@ -3,22 +3,22 @@ package com.example.dev4me
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.dev4me.databinding.ActivityFilterUserBinding
+//import com.example.dev4me.databinding.ActivityFilterUserBinding
 
 class FilterUser : AppCompatActivity() {
 
-    private lateinit var binding: ActivityFilterUserBinding
+//    private lateinit var binding: ActivityFilterUserBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityFilterUserBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.searchButton.setOnClickListener {
-            showFilteredJobs()
-        }
-
-        binding.checkboxPresential.isChecked
+//        binding = ActivityFilterUserBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+//
+//        binding.searchButton.setOnClickListener {
+//            showFilteredJobs()
+//        }
+//
+//        binding.checkboxPresential.isChecked
     }
 
     private fun showFilteredJobs() {

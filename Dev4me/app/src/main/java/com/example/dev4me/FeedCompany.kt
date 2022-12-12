@@ -66,7 +66,7 @@ class FeedCompany : AppCompatActivity() {
                         usersList = response.body()!!
                         val layoutManager = LinearLayoutManager(this@FeedCompany)
                         binding.recyclerViewFeedCompany.layoutManager = layoutManager
-                        val adapter = UserAdapter(usersList)
+                        val adapter = UserAdapter(usersList, this@FeedCompany)
                         binding.recyclerViewFeedCompany.adapter = adapter
                     }
                 }
