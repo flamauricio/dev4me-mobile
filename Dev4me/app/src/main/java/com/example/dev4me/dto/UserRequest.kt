@@ -1,7 +1,7 @@
 package com.example.dev4me.dto
 
 class UserRequest (
-    val id: Int,
+    val id: Integer,
     val nome: String,
     val email: String,
     val descUsuario: String,
