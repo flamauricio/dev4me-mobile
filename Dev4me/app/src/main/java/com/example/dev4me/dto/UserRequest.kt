@@ -6,5 +6,6 @@ data class UserRequest (
     val email: String,
     val descUsuario: String,
     val cep: String,
+    val endereco: String,
     val telefone: String
 )

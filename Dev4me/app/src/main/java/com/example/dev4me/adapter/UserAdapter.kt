@@ -41,7 +41,7 @@ class UserAdapter(
         val item = itemsList[position]
 
         holder.userName.text = item.nome
-        holder.localization.text = item.cep
+        holder.localization.text = item.endereco
         holder.userDescription.text = item.descUsuario
         holder.phone.text = item.telefone
 
