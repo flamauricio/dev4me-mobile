@@ -64,6 +64,10 @@ class UserMenu : AppCompatActivity() {
         binding.unableAccount.setOnClickListener {
             startActivity(Intent(this, DesativarConta::class.java))
         }
+
+        binding.seta.setOnClickListener {
+            startActivity(Intent(this, FeedUser::class.java))
+        }
     }
 
     private fun pegarDadosUsuario(id: Int) {

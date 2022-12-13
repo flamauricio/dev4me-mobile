@@ -76,6 +76,9 @@ class CompanyMenu : AppCompatActivity() {
             startActivity(Intent(this, DesativarConta::class.java))
         }
 
+        binding.seta.setOnClickListener {
+            startActivity(Intent(this, FeedCompany::class.java))
+        }
     }
 
     private fun pegarDadosEmpresa(id: Int) {
