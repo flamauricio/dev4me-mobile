@@ -62,6 +62,10 @@ class UserProfile : AppCompatActivity() {
             salvarDados()
             salvarTags()
         }
+
+        binding.seta.setOnClickListener {
+            startActivity(Intent(this, UserMenu::class.java))
+        }
     }
 
     private fun plotarDadosNaTela() {

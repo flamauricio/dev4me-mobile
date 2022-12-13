@@ -37,6 +37,10 @@ class CompanyProfile : AppCompatActivity() {
         binding.salvar.setOnClickListener {
             salvarDados()
         }
+
+        binding.seta.setOnClickListener {
+            startActivity(Intent(this, CompanyMenu::class.java))
+        }
     }
 
     fun plotarInformacoesNaTela() {
