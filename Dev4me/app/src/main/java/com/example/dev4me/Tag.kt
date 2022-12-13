@@ -1,8 +1,8 @@
 package com.example.dev4me
 
-class Tag {
-    val id_tag: Int? = null
-    val nome: String? = null
-    val tipo: String? = null
+data class Tag(
+    val id_tag: Int?,
+    val nome: String?,
+    val tipo: String?,
     val url: String? = null
-}
+)

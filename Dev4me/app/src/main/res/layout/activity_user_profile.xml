@@ -212,6 +212,25 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tags"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/tagsUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    app:flexWrap="wrap" />
+
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -25,4 +25,7 @@ interface Usuario {
 
     @PATCH("/usuarios/alterar-dados")
     fun patchUsuario(@Body usuario: com.example.dev4me.Usuario): Call<Unit>
+
+    @GET("/usuarios/filter/android")
+    fun getUsersByTags(@Body tagList: MutableList<com.example.dev4me.Tag>): Call<List<UserRequest>>
 }
