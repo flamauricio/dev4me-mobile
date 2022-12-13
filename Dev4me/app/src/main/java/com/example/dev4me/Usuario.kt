@@ -2,7 +2,6 @@ package com.example.dev4me
 
 import java.time.LocalDate
 
-
 data class Usuario (
     val id: Int?,
     val nome: String?,

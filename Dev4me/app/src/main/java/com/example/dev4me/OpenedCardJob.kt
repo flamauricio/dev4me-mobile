@@ -28,6 +28,8 @@ class OpenedCardJob : AppCompatActivity() {
         idVaga = intent.getIntExtra("idVaga", 0)
         loadJobInfo(idVaga)
 
+        val idUsuario =getSharedPreferences("chaveGeral-Xml", MODE_PRIVATE).getInt("id", 0)
+
         binding.profileIcon.setOnClickListener {
             val navigateToProfile = Intent(this, UserMenu::class.java)
             startActivity(navigateToProfile)
@@ -42,12 +44,29 @@ class OpenedCardJob : AppCompatActivity() {
                 }
                 .setPositiveButton(resources.getString(R.string.alert_yes)) { dialog, which ->
                     // Notify company and add to user candidacies
+                    postApplication(idVaga)
                     binding.applyButton.text = resources.getString(R.string.button_apply_now_active)
                     binding.applyButton.setBackgroundColor(resources.getColor(R.color.light_gray))
                     // Disable "apply now" button
                 }
                 .show()
         }
+    }
+
+    private fun postApplication(idVaga: Int){
+        retrofit.create(com.example.dev4me.endpoints.CandidatoVaga::class.java)
+            .postApplication(idVaga, getSharedPreferences("chaveGeral-Xml", MODE_PRIVATE).getInt("id", 0))
+            .enqueue(object : Callback<Unit> {
+                override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
+//                    if (response.code() == 201) {
+//                    }
+                }
+
+                override fun onFailure(call: Call<Unit>, t: Throwable) {
+                    MaterialAlertDialogBuilder(this@OpenedCardJob).setMessage(t.message.toString())
+                        .show()
+                }
+            })
     }
 
     private fun loadJobInfo(idVaga: Int) {
@@ -64,9 +83,6 @@ class OpenedCardJob : AppCompatActivity() {
                     if (response.code() == 200) {
 
                         val vagaInfos = response.body()!!
-//                        MaterialAlertDialogBuilder(this@OpenedCardJob)
-//                            .setMessage(vagaInfos.toString())
-//                            .show()
 
                         vagaInfos.tags.forEach {
                             val tag = layoutInflater.inflate(R.layout.res_tag, null)
@@ -85,7 +101,6 @@ class OpenedCardJob : AppCompatActivity() {
                         val atividades = vagaInfos.vaga.atividades
                         val requisitos = vagaInfos.vaga.requisitos
                         val level = vagaInfos.vaga.level
-                        val disponivel = vagaInfos.vaga.disponivel
                         val nomeEmpresa = vagaInfos.vaga.fkEmpresa.nome
 
                         binding.vagaTitle.text = titulo

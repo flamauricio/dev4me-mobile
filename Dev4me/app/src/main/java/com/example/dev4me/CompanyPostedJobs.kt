@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.TextView
 import com.example.dev4me.databinding.ActivityCompanyPostedJobsBinding
 import com.example.dev4me.retrofit.Rest
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -44,17 +45,15 @@ class CompanyPostedJobs : AppCompatActivity() {
                             card.findViewById<TextView>(R.id.titulozada).text = it.titulo
                             card.findViewById<TextView>(R.id.tipoContrato).text = it.contrato
 
-//                            card.setOnClickListener { v ->
-//                                start
-//                            }
-
                             binding.vagas.addView(card)
                         }
                     }
                 }
 
                 override fun onFailure(call: Call<List<Vaga>>, t: Throwable) {
-                    TODO("Not yet implemented")
+                    MaterialAlertDialogBuilder(this@CompanyPostedJobs)
+                        .setMessage(t.message)
+                        .show()
                 }
             })
 

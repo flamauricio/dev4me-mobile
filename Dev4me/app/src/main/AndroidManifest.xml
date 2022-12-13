@@ -37,6 +37,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".CompanyUsersApplied"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FeedCompany"
             android:exported="false">
             <meta-data

@@ -52,6 +52,11 @@ class CompanyMenu : AppCompatActivity() {
             startActivity(navigate)
         }
 
+        binding.notifications.setOnClickListener {
+            val navigate = Intent(this, CompanyUsersApplied::class.java)
+            startActivity(navigate)
+        }
+
         binding.creatJob.setOnClickListener {
             val navigate = Intent(this, CadastroVaga::class.java)
             startActivity(navigate)
