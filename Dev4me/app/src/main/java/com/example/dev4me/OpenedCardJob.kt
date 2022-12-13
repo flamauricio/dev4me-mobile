@@ -19,6 +19,7 @@ class OpenedCardJob : AppCompatActivity() {
     private lateinit var binding: ActivityOpenedCardJobBinding
 
     private var idVaga: Int = 0
+    //private val idUser = getSharedPreferences("chaveGeral-Xml", MODE_PRIVATE).getInt("id", 0)
     val retrofit = Rest.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,10 +45,15 @@ class OpenedCardJob : AppCompatActivity() {
                     // Notify company and add to user candidacies
                     binding.applyButton.text = resources.getString(R.string.button_apply_now_active)
                     binding.applyButton.setBackgroundColor(resources.getColor(R.color.light_gray))
+                    //sendCandidacy(idUser, idVaga)
                     // Disable "apply now" button
                 }
                 .show()
         }
+    }
+
+    private fun sendCandidacy(idUser: Int, idVaga: Int) {
+
     }
 
     private fun loadJobInfo(idVaga: Int) {

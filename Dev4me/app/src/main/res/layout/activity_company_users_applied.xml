@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_gray"
     android:orientation="vertical"
-    tools:context=".UserCandidacies">
+    tools:context=".CompanyUsersApplied">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -99,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
-                android:text="@string/my_posted_jobs"
+                android:text="@string/my_notifications"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
         </LinearLayout>

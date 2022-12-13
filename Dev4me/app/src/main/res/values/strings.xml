@@ -164,6 +164,7 @@ Conhecimento básico de JavaScript e Cloud.
     <string name="visao_valores_missao_empresa_hint">Digite a visão, valores e a missão da empresa</string>
     <string name="title_activity_user_candidacies">UserCandidacies</string>
     <string name="my_posted_jobs">Vagas Postadas</string>
+    <string name="my_notifications">Notificações</string>
 
     <string name="large_text">
         "Material is the metaphor.\n\n"
