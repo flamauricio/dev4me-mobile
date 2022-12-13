@@ -24,4 +24,8 @@ interface Usuario {
 
     @POST("/candidatos/{idVaga}/{idUsuario}")
     fun postApplication(@Path("idVaga") idVaga: Int, @Path("idUsuario") id: Int): Call<Unit>
+
+    @GET("/usuarios/filter/android")
+    fun getUsersByTags(@Body tagList: MutableList<com.example.dev4me.Tag>): Call<List<UserRequest>>
+
 }
