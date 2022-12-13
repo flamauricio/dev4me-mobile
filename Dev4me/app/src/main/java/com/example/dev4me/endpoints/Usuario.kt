@@ -5,10 +5,7 @@ import com.example.dev4me.dto.SenhaRequest
 import com.example.dev4me.dto.UserRequest
 import com.google.gson.JsonObject
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.PATCH
-import retrofit2.http.Path
+import retrofit2.http.*
 
 interface Usuario {
     @GET("/usuarios/perfil/{id}")
@@ -25,4 +22,7 @@ interface Usuario {
 
     @PATCH("/usuarios/alterar-dados")
     fun patchUsuario(@Body usuario: com.example.dev4me.Usuario): Call<Unit>
+
+    @POST("/candidatos/{idVaga}/{idUsuario}")
+    fun postApplication(@Path("idVaga") idVaga: Int, @Path("idUsuario") id: Int): Call<Unit>
 }
