@@ -11,11 +11,12 @@ import androidx.annotation.NonNull
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dev4me.OpenedCardJob
+import com.example.dev4me.PersonProfileView
 import com.example.dev4me.R
-import com.example.dev4me.dto.UserRequest
+import com.example.dev4me.Usuario
 
 class UserAdapter(
-    private val itemsList: List<UserRequest>,
+    private val itemsList: List<Usuario>,
     private val context: Context,
 ) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
@@ -38,16 +39,16 @@ class UserAdapter(
         val item = itemsList[position]
 
         holder.userName.text = item.nome
-        holder.localization.text = item.cep
+        holder.localization.text = item.endereco
         holder.userDescription.text = item.descUsuario
 
         setListeners(holder, item, item.id)
     }
 
-    private fun setListeners(holder: UserViewHolder, userCard: UserRequest, id: Integer) {
+    private fun setListeners(holder: UserViewHolder, userCard: Usuario, id: Int?) {
         holder.card.setOnClickListener {
 
-            val intent = Intent(context, OpenedCardJob::class.java)
+            val intent = Intent(context, PersonProfileView::class.java)
             intent.putExtra("id", id)
             ContextCompat.startActivity(context, intent, null)
         }
@@ -57,7 +58,7 @@ class UserAdapter(
         return itemsList.size
     }
 
-    fun getItem(position: Int): UserRequest {
+    fun getItem(position: Int): Usuario {
         return itemsList[position]
     }
 }

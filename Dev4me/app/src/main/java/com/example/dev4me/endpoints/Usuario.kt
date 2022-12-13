@@ -2,7 +2,6 @@ package com.example.dev4me.endpoints
 
 import com.example.dev4me.UsuarioTag
 import com.example.dev4me.dto.SenhaRequest
-import com.example.dev4me.dto.UserRequest
 import com.google.gson.JsonObject
 import retrofit2.Call
 import retrofit2.http.*
@@ -15,7 +14,7 @@ interface Usuario {
     fun getUsuarioTags(@Path("id") id: Int): Call<UsuarioTag>
 
     @GET("/usuarios")
-    fun getUsers(): Call<List<UserRequest>>
+    fun getUsers(): Call<List<com.example.dev4me.Usuario>>
 
     @PATCH("/usuarios/senha/{id}")
     fun patchSenhaUsuario(@Path("id") id: Int, @Body senhaRequest: SenhaRequest): Call<Unit>

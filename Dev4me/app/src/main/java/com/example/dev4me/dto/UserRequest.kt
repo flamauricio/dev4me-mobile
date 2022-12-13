@@ -5,5 +5,5 @@ class UserRequest (
     val nome: String,
     val email: String,
     val descUsuario: String,
-    val cep: String
+    val endereco: String
 )

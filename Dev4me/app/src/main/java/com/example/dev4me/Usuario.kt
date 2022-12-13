@@ -8,7 +8,7 @@ class Usuario (
     val nome: String?,
     val email: String?,
     val senha: String?,
-    val dataNasc: LocalDate?,
+    val dataNasc: String?,
     val descUsuario: String?,
     val cpf: String?,
     val telefone: String?,
