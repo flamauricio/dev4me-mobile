@@ -71,7 +71,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/woman" />
+                    android:src="@drawable/user_profile_icon" />
 
                 <TextView
                     android:id="@+id/usuarioName"

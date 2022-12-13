@@ -31,7 +31,7 @@
                     android:id="@+id/imageCompany"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/accenture_logo" />
+                    android:src="@drawable/world" />
 
                 <TextView
                     android:id="@+id/nameCompany"
@@ -46,13 +46,6 @@
                     android:textColor="@color/light_title_gray"
                     android:textSize="15dp"
                     tools:ignore="RtlCompat" />
-
-                <ImageView
-                    android:id="@+id/bookmarkIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/bookmark_svgrepo_com"
-                    app:tint="@color/light_gray" />
 
             </LinearLayout>
 
