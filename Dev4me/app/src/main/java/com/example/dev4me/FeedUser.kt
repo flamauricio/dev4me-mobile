@@ -61,13 +61,11 @@ class FeedUser : AppCompatActivity() {
         retrofit.create(com.example.dev4me.endpoints.Vaga::class.java).getFilteredJobs(selectedTags)
             .enqueue(object : Callback<List<Vaga>> {
                 override fun onResponse(call: Call<List<Vaga>>, response: Response<List<Vaga>>) {
-                    if (response.code() == 200) {
                         jobsList = response.body()!!
                         val layoutManager = LinearLayoutManager(this@FeedUser)
                         binding.recyclerViewFeedUser.layoutManager = layoutManager
                         val adapter = JobsAdapter(jobsList, context)
                         binding.recyclerViewFeedUser.adapter = adapter
-                    }
                 }
 
                 override fun onFailure(call: Call<List<Vaga>>, t: Throwable) {

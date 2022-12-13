@@ -1,9 +1,10 @@
 package com.example.dev4me.dto
 
-class UserRequest (
+data class UserRequest (
     val id: Integer,
     val nome: String,
     val email: String,
     val descUsuario: String,
-    val cep: String
+    val cep: String,
+    val telefone: String
 )

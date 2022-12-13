@@ -81,7 +81,7 @@
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
                     android:textAlignment="textStart"
-                    android:text="Lara de Carvalho"
+                    android:text="..."
                     android:textColor="@color/light_title_gray"
                     android:textSize="20dp"
                     android:layout_marginLeft="20dp"
@@ -127,7 +127,79 @@
                         android:fontFamily="@font/poppins_bold"
                         android:gravity="center_vertical"
                         android:textAlignment="textStart"
-                        android:text="São Paulo, SP"
+                        android:text="..."
+                        android:textColor="@color/light_title_gray"
+                        android:textSize="12dp"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_baseline_phone_24"
+                        app:tint="@color/light_blue" />
+
+                    <TextView
+                        android:id="@+id/usuarioTelefone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textStart"
+                        android:text="..."
+                        android:textColor="@color/light_title_gray"
+                        android:textSize="12dp"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_baseline_email_24"
+                        app:tint="@color/light_blue" />
+
+                    <TextView
+                        android:id="@+id/usuarioEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textStart"
+                        android:text="..."
                         android:textColor="@color/light_title_gray"
                         android:textSize="12dp"
                         tools:ignore="RtlCompat" />
@@ -186,7 +258,7 @@
                     android:fontFamily="@font/poppins_bold"
                     android:gravity="center_vertical"
                     android:textAlignment="textStart"
-                    android:text="@string/person_description"
+                    android:text="..."
                     android:textColor="@color/light_title_gray"
                     android:textSize="12dp"
                     tools:ignore="RtlCompat"/>

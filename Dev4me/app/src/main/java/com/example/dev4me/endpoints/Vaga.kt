@@ -20,6 +20,6 @@ interface Vaga {
     @POST("/vagas")
     fun postVaga(@Body vaga: com.example.dev4me.Vaga): Call<com.example.dev4me.Vaga>
 
-    @GET("/tag-vagas/filtros/mobile")
+    @POST("/tags-vagas/filtros/mobile")
     fun getFilteredJobs(@Body tagList: MutableList<com.example.dev4me.Tag>): Call<List<com.example.dev4me.Vaga>>
 }

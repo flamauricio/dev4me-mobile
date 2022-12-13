@@ -11,8 +11,10 @@ import androidx.annotation.NonNull
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dev4me.OpenedCardJob
+import com.example.dev4me.PersonProfileView
 import com.example.dev4me.R
 import com.example.dev4me.dto.UserRequest
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class UserAdapter(
     private val itemsList: List<UserRequest>,
@@ -25,6 +27,7 @@ class UserAdapter(
         val userName: TextView = view.findViewById(R.id.nameUser)
         val localization: TextView = view.findViewById(R.id.localization)
         val userDescription: TextView = view.findViewById(R.id.userDescription)
+        val phone: TextView = view.findViewById(R.id.telefone)
     }
 
     @NonNull
@@ -40,14 +43,14 @@ class UserAdapter(
         holder.userName.text = item.nome
         holder.localization.text = item.cep
         holder.userDescription.text = item.descUsuario
+        holder.phone.text = item.telefone
 
         setListeners(holder, item, item.id)
     }
 
     private fun setListeners(holder: UserViewHolder, userCard: UserRequest, id: Integer) {
         holder.card.setOnClickListener {
-
-            val intent = Intent(context, OpenedCardJob::class.java)
+            val intent = Intent(context, PersonProfileView::class.java)
             intent.putExtra("id", id)
             ContextCompat.startActivity(context, intent, null)
         }

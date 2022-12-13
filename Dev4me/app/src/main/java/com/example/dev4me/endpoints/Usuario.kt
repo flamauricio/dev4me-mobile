@@ -8,6 +8,7 @@ import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.PATCH
+import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface Usuario {
@@ -17,7 +18,7 @@ interface Usuario {
     @GET("/usuarios/tags-usuario/{id}")
     fun getUsuarioTags(@Path("id") id: Int): Call<UsuarioTag>
 
-    @GET("/usuarios")
+    @GET("/usuarios/completos")
     fun getUsers(): Call<List<UserRequest>>
 
     @PATCH("/usuarios/senha/{id}")
@@ -26,6 +27,6 @@ interface Usuario {
     @PATCH("/usuarios/alterar-dados")
     fun patchUsuario(@Body usuario: com.example.dev4me.Usuario): Call<Unit>
 
-    @GET("/usuarios/filter/android")
+    @POST("/usuarios/filter/android")
     fun getUsersByTags(@Body tagList: MutableList<com.example.dev4me.Tag>): Call<List<UserRequest>>
 }

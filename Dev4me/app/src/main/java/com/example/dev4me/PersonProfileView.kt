@@ -45,9 +45,6 @@ class PersonProfileView : AppCompatActivity() {
                     if (response.code() == 200) {
 
                         val userInfos = response.body()!!
-                        MaterialAlertDialogBuilder(this@PersonProfileView)
-                            .setMessage(userInfos.toString())
-                            .show()
 
                         userInfos.tags.forEach {
                             val tag = layoutInflater.inflate(R.layout.res_tag, null)
@@ -58,19 +55,22 @@ class PersonProfileView : AppCompatActivity() {
 
                         val id = userInfos.usuario.id
                         val name = userInfos.usuario.nome
-                        val localization = userInfos.usuario.cep
+                        val localization = userInfos.usuario.endereco
                         val description = userInfos.usuario.descUsuario
+                        val telefone = userInfos.usuario.telefone
+                        val email = userInfos.usuario.email
 
                         binding.usuarioName.text = name
                         binding.usuarioLocalization.text = localization
                         binding.usuarioDescription.text = description
-
+                        binding.usuarioTelefone.text = telefone
+                        binding.usuarioEmail.text = email
                     }
                 }
 
                 override fun onFailure(call: Call<UsuarioTag>, t: Throwable) {
                     MaterialAlertDialogBuilder(this@PersonProfileView)
-                        .setMessage(resources.getString(R.string.api_error))
+                        .setMessage("Esse usuário não possui tags. Perfil incompleto.")
                         .show()
                 }
 
